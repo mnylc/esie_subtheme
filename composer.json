@@ -13,6 +13,6 @@
         }
     ],
     "require": {
-        "drupal/solid:":"^1.1.0"
+        "drupal/solid": "^1.1.0"
     }
 }
