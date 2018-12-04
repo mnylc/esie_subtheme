@@ -1,0 +1,18 @@
+{
+    "name": "archipelago/archipelago_subtheme",
+    "description": "Bare Bone Bootstrap4 to be further extended by nice people",
+    "type": "drupal-theme",
+    "license": "GPL-2.0+",
+    "homepage": "https://github.com/esmero/archipelago_subtheme",
+    "authors": [
+        {
+            "name": "Diego Pino Navarro",
+            "email": "dpino@metro.org",
+            "homepage": "https://github.com/DiegoPino",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "drupal/solid:":"^1.1.0"
+    }
+}
