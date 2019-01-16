@@ -2,4 +2,59 @@
  * @file
  * Subtheme specific CSS.
  */
+/* Top header menu */
 
+section.region-top-header-form {
+   margin-left:0px;
+}
+
+#page .list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+#page .form-text {
+    margin-top:0px;
+} 
+
+#page .form-control { 
+    background-color: rgba(233, 236, 239, 0.5);
+}
+
+#page details summary {
+    color: #0071b3;
+}
+
+#page div.entity-meta {
+    background-color: rgba(233, 236, 239, 0.31);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+}
+
+/* Search Button Style */
+#edit-submit-solr-search-content {
+   background-color: orange;
+   margin-bottom: .25rem;
+   color: white;
+}
+
+#edit-submit {
+   background-color: #28a773;
+}
+#edit-preview {
+    background-color: rgba(40, 167, 115, 0.3);
+}
+
+/* Navigation */
+.sidebar nav ul.nav {
+  -webkit-flex-direction: row;  /* Safari */
+  flex-direction:  column;
+}
+
+/* Content */
+.layout--onecol {
+  -webkit-flex-direction: row;  /* Safari */
+  flex-direction:  column;
+  margin-bottom: 2em;
+}
