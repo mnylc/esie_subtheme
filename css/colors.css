@@ -2,14 +2,14 @@
 
 body {
     color: #3b3b3b;
-    background: #292929;
+    background: #f2f2f2;
 }
 
 #page,
 #main-wrapper,
 .region-primary-menu .menu-item a.is-active,
 .region-primary-menu .menu-item--active-trail a {
-    background: #fff;
+    background: #ffffff;
 }
 
 .tabs ul.primary li a.is-active {
@@ -72,7 +72,7 @@ a:active,
 }
 
 .site-footer {
-    background: #292929;
+    background: #f2f2f2;
 }
 
 .region-header,

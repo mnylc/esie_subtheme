@@ -9,7 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
- * 
+ *
  */
 function archipelago_subtheme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
@@ -28,4 +28,11 @@ function archipelago_subtheme_form_system_theme_settings_alter(&$form, FormState
       'bg-white' => t('White'),
       'bg-transparent' => t('Transparent'),
   );
+}
+
+function archipelago_subtheme_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if (isset($form['search_api_fulltext'])) {
+    $form['search_api_fulltext']['#attributes']['placeholder'] = t('Search');
+  }
+ 
 }

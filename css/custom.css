@@ -1,0 +1,184 @@
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a{
+  font-family: 'Mukta', sans-serif;
+}
+
+a{
+  color:#00804d;
+}
+
+a:hover{
+  color: #00cc7a;
+
+}
+
+#navbar-main {
+  background-color: #333333;
+  padding:0px;
+  margin-bottom: 22px;
+}
+
+#navbar-main li{
+  font-size: .8em;
+}
+
+.path-frontpage #navbar-main {
+  margin-bottom: 0px;
+}
+
+.breadcrumb{
+  background-color:#fff;
+}
+
+#navbar-top{
+  background-color:#000;
+  border-bottom: 1px solid #ccc;
+}
+
+#page .form-control{
+  background-color: #fff;
+}
+
+.path-frontpage .highlighted{
+  text-align: center;
+}
+
+.path-frontpage #main-wrapper{
+  display: none;
+}
+
+.navbar-dark .navbar-brand{
+  font-size: 1.5em;
+  color:#4dffb8;
+  margin-left: 14px;
+}
+
+#views-exposed-form-solr-search-content-page-1{
+  margin-right:14px;
+}
+
+#block-useraccountmenu {
+  position: relative;
+  top:7px;
+  clear:both;
+}
+
+#block-tools a{
+  color:#b3ffe0;
+}
+
+
+#block-archipelagoinfoforhomepage{
+  display: block;
+  min-height:400px;
+}
+
+#block-archipelagoinfoforhomepage h2{
+  font-size: 40px;
+  padding-top:50px;
+}
+
+#block-archipelagoinfoforhomepage h3{
+  margin-bottom:50px;
+}
+
+h1.title{
+      font-size: 2rem;
+}
+
+.path-frontpage .highlighted{
+  background-color:  #d1d1e0;
+}
+
+.path-frontpage aside.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.field--name-display-field-copynode-formatted-metadata h2{
+  font-size: 1.3em;
+}
+
+/**home page promo stuff**/
+
+.promo, .promo-odd, .promo-even{
+  padding-left: 10%;
+  padding-right:10%;
+  min-height:400px;
+  padding-top:20px;
+}
+
+.promo{
+  min-height:800px;
+  background-image: url(http://ec2-3-81-3-204.compute-1.amazonaws.com/sites/default/files/2019-02/islands_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.promo p{
+  font-size: 1.5em;
+  line-height: 36px;
+}
+
+.promo-odd p, .promo-even p{
+  font-size: 1.8em;
+}
+
+.promo, .promo-even{
+  background-color:   #e3e3e3;
+}
+
+/**linked data, sidebars in general**/
+
+.sidebar .block{
+  background-color: #f2f2f2;
+}
+.sidebar .block.block-views-blockld-display-for-digital-objects-sql-block-1{
+  border: 1px solid #e6e6e6;
+}
+
+.block-views-blockld-display-for-digital-objects-sql-block-1{
+  color: #333333;
+}
+
+.block-views-blockld-display-for-digital-objects-sql-block-1 h2{
+  text-shadow: none;
+  font-size: 1.2em;
+}
+
+.block-views-blockld-display-for-digital-objects-sql-block-1 a{
+  color:#00995c;
+}
+
+.block-views-blockld-display-for-digital-objects-sql-block-1 a:hover{
+  color:#00cc7a;
+}
+
+/**site footer**/
+
+.site-footer {
+  margin-top:10px;
+  background-color: #000;
+}
+
+.site-footer .block{
+  border:none;
+}
+
+#footer-logo {
+  display:block;
+  width:125px;
+  background-color: #fff;
+  float:left;
+}
+
+#footer-metro-title{
+  font-size: 1.2em;
+  margin-left:20px;
+  float:left;
+  position:relative;
+  top:100px;
+}
+
+/**search results**/
+.view-solr-search-content h2{
+  font-size: 1.4em;
+}

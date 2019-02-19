@@ -6,6 +6,7 @@ global-styling:
     component:
       css/style.css: {}
       css/colors.css: {}
+      css/custom.css: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}
@@ -29,3 +30,7 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+fonts:
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Mukta:400,500,600,700': { type: external, minified: true }

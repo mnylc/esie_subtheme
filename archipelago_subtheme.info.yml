@@ -8,6 +8,7 @@ base theme: bootstrap_barrio
 libraries:
   - archipelago_subtheme/bootstrap_cdn
   - archipelago_subtheme/global-styling
+  - archipelago_subtheme/fonts
 
 regions:
   top_header: 'Top Header'
