@@ -182,3 +182,85 @@ h1.title{
 .view-solr-search-content h2{
   font-size: 1.4em;
 }
+
+/**webform**/
+.block-help{
+  border-color:#fff;
+}
+
+.custom-form-input-heading{
+  font-weight:bold;
+  font-size: 1.2em;
+  margin-top:8px;
+}
+
+.webform-progress-tracker{
+  margin-left:10px;
+}
+
+.progress-step.is-active .progress-marker {
+    background-color: #28a773;
+}
+
+.webform-progress-tracker .progress-step.is-complete .progress-marker {
+  background-color: rgba(40, 167, 115, 0.3);
+}
+
+.webform-progress-tracker .progress-step.is-complete:hover .progress-marker {
+    background-color: rgba(40, 167, 115, 0.6);
+}
+
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker {
+  background-color: #28a773;
+}
+
+.webform-actions .webform-button--next {
+  background-color:#b3ffe0;
+}
+.webform-button--submit {
+  background-color:#28a773;
+}
+.webform-button--preview {
+    background-color: rgba(40, 167, 115, 0.3);
+}
+.webform-progress .progress-title[role="link"] {
+    color: #00804d;
+}
+.webform-progress .progress-title[role="link"]:hover, .webform-progress .progress-title[role="link"]:focus {
+    text-decoration: underline;
+    color: #00804d;
+}
+
+.fas {
+  color: rgba(40, 167, 115, 0.2);
+}
+
+/** Layout **/
+
+.layout--twocol {
+    margin: 0 0 1em;
+    border-bottom: 1px solid rgba(165,165,165,0.3);
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 1.071em;
+    line-height: 1.2;
+}
+
+
+/* node edit */
+#page details summary {
+    color: #333333; 
+}
+
+div#sidebar_second.sidebar.col-md-3.order-last:empty {
+    max-width:0px !important; 
+    width: 0px !important;
+    min-height: 0px;
+    flex: 0 0 0% !important;
+    flex-basis: 0;
+} 
+
+/* make sure hidden is respected */
+.hidden {
+    display: none !important;
+}
