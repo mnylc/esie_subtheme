@@ -1,3 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a{
   font-family: 'Mukta', sans-serif;
 }
@@ -155,6 +164,11 @@ h1.title{
 /**site footer**/
 
 .site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
   margin-top:10px;
   background-color: #000;
 }
@@ -249,16 +263,16 @@ h1.title{
 
 /* node edit */
 #page details summary {
-    color: #333333; 
+    color: #333333;
 }
 
 div#sidebar_second.sidebar.col-md-3.order-last:empty {
-    max-width:0px !important; 
+    max-width:0px !important;
     width: 0px !important;
     min-height: 0px;
     flex: 0 0 0% !important;
     flex-basis: 0;
-} 
+}
 
 /* make sure hidden is respected */
 .hidden {
