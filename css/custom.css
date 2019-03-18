@@ -160,14 +160,29 @@ h1.title{
   border-color:#fff;
 }
 
-.custom-form-input-heading{
+.custom-form-input-heading,
+.field--name-moderation-state label{
   font-weight:bold;
   font-size: 1.2em;
   margin-top:8px;
 }
 
+
 .webform-progress-tracker{
   margin-left:10px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper{
+  margin-left:-30px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper .form-actions{
+  margin-left:16px;
+}
+
+.field--name-moderation-state{
+  margin-left:-30px;
+  width:300px;
 }
 
 .progress-step.is-active .progress-marker {
