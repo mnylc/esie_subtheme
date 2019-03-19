@@ -9,6 +9,15 @@ body {
   margin-bottom: 60px;
 }
 
+body.path-frontpage {
+  /* Margin bottom by footer height - none on front page */
+  margin-bottom: 0px;
+}
+
+.path-frontpage .feed-icons{
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a{
   font-family: 'Mukta', sans-serif;
 }
@@ -27,7 +36,7 @@ pre code{
   color:#00ff00;
   background-color: #000;
   margin-left: 8px;
-  width: 900px;
+  width: 1010px;
   overflow:scroll;
   -moz-border-radius: 8px;
 -webkit-border-radius: 8px;
@@ -46,6 +55,10 @@ border-radius: 8px; /* future proofing */
 }
 
 /**menu and nav styles**/
+ul.navbar-nav li{
+  display:inline;
+}
+
 #navbar-main {
   background-color: #333333;
   padding:0px;
@@ -94,7 +107,7 @@ border-radius: 8px; /* future proofing */
 /** END menu and nav styles**/
 
 h1.title{
-      font-size: 2rem;
+  font-size: 2rem;
 }
 
 .field--name-display-field-copynode-formatted-metadata h2{
@@ -102,13 +115,26 @@ h1.title{
 }
 
 /**home page promo stuff**/
-/*
+
 .promo{
-  min-height:800px;
-  background-image: url(http://ec2-3-81-3-204.compute-1.amazonaws.com/sites/default/files/2019-02/islands_1.jpg);
+  display: block;
+  margin-top:-68px;
+  width:100%;
+  height:900px;
+  background-image: url(../img/islands_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-*/
+}
+
+.jumbotron{
+  position:relative;
+  top:80px;
+  margin-left:10%;
+  margin-right: 10%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
 
 /**linked data, sidebars in general**/
 
@@ -142,7 +168,6 @@ h1.title{
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
   margin-top:10px;
   background-color: #000;
@@ -160,18 +185,22 @@ h1.title{
 /**END search results**/
 
 .view-id-archieplago_media_files .views-table,
-.view-duplicate-of-content .views-form,
-.view-duplicate-of-content #edit-header{
+.view-id-activity .views-form,
+.view-id-activity #edit-header{
   margin-left: -30px;
 }
 
-.view-duplicate-of-content #edit-action{
+.view-id-activity #edit-action{
   display:block;
-  width:300px;
+  width:276px;
 }
 
 .form-item-langcode{
   display:none;
+}
+
+#edit-submit--2{
+  background-color: #28a773;
 }
 /**webform**/
 .block-help{
