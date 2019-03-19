@@ -29,6 +29,10 @@ pre code{
   margin-left: 8px;
   width: 900px;
   overflow:scroll;
+  -moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px; /* future proofing */
+-khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
 /*
@@ -155,18 +159,36 @@ h1.title{
 }
 /**END search results**/
 
+.view-id-archieplago_media_files .views-table,
+.view-duplicate-of-content .views-form,
+.view-duplicate-of-content #edit-header{
+  margin-left: -30px;
+}
+
+.view-duplicate-of-content #edit-action{
+  display:block;
+  width:300px;
+}
+
+.form-item-langcode{
+  display:none;
+}
 /**webform**/
 .block-help{
   border-color:#fff;
 }
 
 .custom-form-input-heading,
-.field--name-moderation-state label{
+.field--name-moderation-state label,
+.node-type-list a{
   font-weight:bold;
   font-size: 1.2em;
   margin-top:8px;
 }
 
+.node-type-list dt{
+  margin-top:20px;
+}
 
 .webform-progress-tracker{
   margin-left:10px;
