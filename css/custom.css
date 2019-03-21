@@ -4,6 +4,7 @@ html {
   background-color: #fff;
 }
 
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
@@ -135,7 +136,7 @@ h1.title{
   text-align: center;
 }
 
-.jumbotron .btn-primary{
+.btn-primary{
   background-color: #28a773;
   border-color: #28a773;
 }
@@ -199,8 +200,6 @@ h1.title{
   padding-left:0px;
 }
 
-
-
 .view-id-activity .views-form,
 .view-id-activity #edit-header{
   margin-left: -30px;
@@ -211,14 +210,26 @@ h1.title{
   width:276px;
 }
 
-.form-item-langcode{
+.form-item-langcode,
+.node-digital-object-collection-form .form-type-language-select{
   display:none;
 }
 
 #edit-submit--2{
   background-color: #28a773;
 }
+
+.node-digital-object-collection-form .field--name-title,
+.node-digital-object-collection-form .field--type-strawberryfield-field,
+.node-digital-object-collection-form .field--name-moderation-state{
+  padding:0px;
+}
+
+.node-digital-object-collection-form .btn-primary{
+  margin-left:30px;
+}
 /**webform**/
+
 .block-help{
   border-color:#fff;
 }
@@ -229,6 +240,11 @@ h1.title{
   font-weight:bold;
   font-size: 1.2em;
   margin-top:8px;
+}
+
+.node-digital-object-collection-form .field--type-strawberryfield-field .fieldset-legend{
+  font-weight:bold;
+  font-size: .8em;
 }
 
 .node-type-list dt{
