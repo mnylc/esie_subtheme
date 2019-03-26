@@ -88,7 +88,7 @@ ul.navbar-nav li{
 .menu--account,
 .menu--main {
   position: relative;
-  top:7px;
+  top:6px;
   clear:both;
 }
 
@@ -120,9 +120,9 @@ h1.title{
 
 .promo{
   display: block;
-  margin-top:-68px;
+  margin-top:-22px;
   width:100%;
-  height:900px;
+  height:740px;
   background-image: url(../img/islands_1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -132,16 +132,66 @@ h1.title{
   margin-top:100px;
   margin-left:10%;
   margin-right: 10%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
 
-.btn-primary{
-  background-color: #28a773;
-  border-color: #28a773;
+p.lead-top{
+  font-size: 1.8em;
 }
 
+p.lead-bottom{
+  margin-top:20px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.6em;
+  color: #33334d;
+}
 
+.btn-primary,
+.button--primary{
+  background-color: #28a773;
+  border-color: #28a773;
+  color:#fff;
+}
+
+.btn-primary:hover,
+.button--primary:hover{
+  color:#000;
+  background-color: #b3ffe0;;
+  border-color: #b3ffe0;;
+}
+
+#strawberryfield{
+ }
+
+#strawberryfield h1,
+.front-section h1{
+  font-weight: bold;
+}
+
+#strawberryfield h1{
+  text-shadow: 1px 1px #FF0000;
+}
+
+#strawberryfield .jumbotron,
+.front-section .jumbotron{
+      background-color: rgba(255, 255, 255, 0);
+      margin-top:0px;
+      text-align: left;
+    }
+
+.front-section{
+   display: block;
+   padding:12px;
+   width:100%;
+   height:600px;
+   background-color: #e3e3e3;
+ }
+
+ .purple{
+   background-color: #d1d1e0;
+ }
 /**linked data, sidebars in general**/
 
 .sidebar .block{
@@ -215,9 +265,12 @@ h1.title{
   display:none;
 }
 
+/*
 #edit-submit--2{
+  color:#fff;
   background-color: #28a773;
 }
+*/
 
 .node-digital-object-collection-form .field--name-title,
 .node-digital-object-collection-form .field--type-strawberryfield-field,
