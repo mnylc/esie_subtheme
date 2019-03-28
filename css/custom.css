@@ -136,6 +136,15 @@ h1.title{
   text-align: center;
 }
 
+@media (max-width:600px) {
+  .jumbotron h1 {
+    font-size: 1.8em;
+  }
+  .jumbotron p.lead-top{
+    font-size: 1.2em;
+  }
+}
+
 p.lead-top{
   font-size: 1.8em;
 }
@@ -185,7 +194,8 @@ p.lead-bottom{
    display: block;
    padding:12px;
    width:100%;
-   height:600px;
+   min-height:600px;
+   height:inherit;
    background-color: #e3e3e3;
  }
 
@@ -259,6 +269,7 @@ p.lead-bottom{
   display:block;
   width:276px;
 }
+
 
 /*
 #edit-submit--2{
