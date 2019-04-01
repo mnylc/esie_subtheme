@@ -56,18 +56,9 @@ border-radius: 8px; /* future proofing */
 }
 
 /**menu and nav styles**/
-ul.navbar-nav li{
-  display:inline;
-}
 
 #navbar-main {
   background-color: #333333;
-  padding:0px;
-  margin-bottom: 22px;
-}
-
-#navbar-main li{
-  font-size: .8em;
 }
 
 .breadcrumb{
@@ -85,27 +76,51 @@ ul.navbar-nav li{
   margin-left: 14px;
 }
 
-.menu--account,
-.menu--main {
-  position: relative;
-  top:6px;
-  clear:both;
+.menu--tools{
+  display:block;
+  width:100%;
+  height:50px;
+  background-color:#000;
+  border-bottom: 1px solid #ccc;
 }
 
-.menu--main {
-  margin-left:12px;
-  margin-right:12px;
+.menu--account{
+  padding-left:0px;
+}
+
+.menu--main{
+  padding-right:0px;
 }
 
 .menu--tools a,
-#navbar-top.navbar-dark .nav-link{
+.menu--account a,
+.navbar-dark .navbar-nav .nav-link{
   color:#b3ffe0;
 }
 
+.menu--account a,
+.navbar-dark .navbar-nav .nav-link{
+  font-size:1.1em;
+  position:relative;
+  top:3px;
+}
+
 .menu--tools a:hover,
-#navbar-top.navbar-dark .nav-link:hover{
+.menu--account a:hover,
+.navbar-dark .navbar-nav .nav-link:hover{
   color:#fff;
 }
+
+.highlighted .container-fluid{
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.block-views-exposed-filter-blocksolr-search-content-page-1{
+  position:relative;
+  top:10px;
+}
+
 /** END menu and nav styles**/
 
 h1.title{
