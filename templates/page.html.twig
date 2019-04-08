@@ -111,15 +111,20 @@
           </div>
           {% endif %}
         </nav>
+        {{ page.editor_toolbar }}
 {% endblock %}
 
 {% block content %}
         <div id="main" class="{{ container }}">
+
           {{ page.breadcrumb }}
+
           <div class="row row-offcanvas row-offcanvas-left clearfix">
+
               <main{{ content_attributes }}>
                 <section class="section">
                   <a id="main-content" tabindex="-1"></a>
+
                   {{ page.content }}
                 </section>
               </main>
