@@ -32,15 +32,9 @@ section.region-top-header-form {
     border-radius: .25rem;
 }
 
-/* Search Button Style */
-#edit-submit-solr-search-content {
-  background-color: orange;
-  margin-bottom: .25rem;
-  color: white;
-}
 /* Node edit buttons */
 #edit-submit {
-  background-color: #28a773;
+  background-color: rgb(10,140,125);
 }
 #edit-preview {
   background-color: rgba(40, 167, 115, 0.3);
@@ -62,7 +56,7 @@ section.region-top-header-form {
   font-size: 1.4em;
   content: "\f002";
   position:absolute;
-  padding:6px 6px 8px 6px;
+  padding:4px 6px 8px 6px;
   pointer-events: none;
 }
 #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
@@ -90,9 +84,9 @@ section.region-top-header-form {
   -moz-border-radius: 7px;
   border-radius: 7px;
   padding: 6px 10px 6px 32px;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #edit-submit-solr-search-content{
@@ -100,6 +94,8 @@ section.region-top-header-form {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
+  background-color: orange;
+  color: white;
 }
 
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete:focus {

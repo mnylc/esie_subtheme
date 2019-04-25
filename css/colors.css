@@ -22,23 +22,50 @@ body {
 }
 
 #navbar-top {
-    background-color: #055a8e;
+    background-color: black;
 }
 
 #navbar-main {
-    background-color: #1d84c3;
+    background-color:rgb(43,58,81);
 }
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #b3ffe0;
+}
+
+
+#navbar-main .nav-link {
+    color: #b3ffe0;
+}
+
+.navbar-toggler {
+    border: 0;
+    align-self: flex-start;
+}
+
+
+.nav-link:hover, .nav-link:focus {
+    color: white;
+}
+
 
 a,
 .link {
-    color: #0071b3;
+    color:rgb(10,140,125);
 }
+a{
+    color:rgb(10,140,125);
+}
+
 
 a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-    color: #018fe2;
+    color:rgb(10,140,125);
+    decoration:none;
 }
 
 a:active,

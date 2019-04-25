@@ -75,8 +75,11 @@
           {% if container_navbar %}
           <div class="container">
           {% endif %}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
+              <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                 {{ page.secondary_menu }}
+                  {{ page.top_header }}
+              </div>
               {% if page.top_header_form %}
                 <div class="form-inline navbar-form float-right">
                   {{ page.top_header_form }}
@@ -92,12 +95,11 @@
           <div class="container">
           {% endif %}
             {{ page.header }}
-            {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+            {% if page.top_header or page.header_form %}
+              <div class="navbar-collapse" id="CollapsingNavbar2">
                 {{ page.primary_menu }}
                 {% if page.header_form %}
-                  <div class="form-inline navbar-form float-right">
+                  <div class="form-inline navbar-form">
                     {{ page.header_form }}
                   </div>
                 {% endif %}
