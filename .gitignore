@@ -12,3 +12,6 @@
 .idea/workspace.xml
 
 .DS_store
+.idea/archipelago_subtheme.iml
+.idea/deployment.xml
+.idea/vcs.xml
