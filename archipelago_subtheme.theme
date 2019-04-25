@@ -70,13 +70,7 @@ function archipelago_subtheme_preprocess_page(&$variables) {
       $expand_class = 'navbar-expand-md';
       break;
   }
-  /* $collapse_first_sidebar = theme_get_setting('archipelago_subtheme_sidebar_collapse');
-  var_dump($collapse_first_sidebar);
-  if ($collapse_first_sidebar) {
-    $variables['sidebar_first_attributes']->setAttribute('id','CollapsingLeft');
-  }*/
 
  /* @var Attribute $variables['navbar_top_attributes'] */
   $variables['navbar_top_attributes']->addClass($expand_class);
-  //$variables['navbar_top_attributes']['attributes']['class'] = array_merge($variables['navbar_top_attributes']['attributes']['class'], [$expand_class]);
 }
