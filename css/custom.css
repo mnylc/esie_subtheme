@@ -95,7 +95,7 @@ pre code {
 
 
     }
-    .navbar-expand-lg .navbar-collapse .nav-link::before {
+    #navbar-top.navbar-expand-lg .navbar-collapse .nav-link::before {
         content: "> ";
         display:inline-block;
         color:#B3FFE3;
@@ -181,6 +181,21 @@ h1.title {
     background-image: url(../img/islands_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start
+}
+
+
+.promo .image-credit {
+    font-size: xx-small;
+    color: #00995c;
+    opacity: 0.5;
+    flex-flow: row;
+    align-self: flex-end;
+    margin-top: auto;
+    justify-content: flex-start;
+    margin-left: auto;
 }
 
 .jumbotron {
@@ -191,7 +206,11 @@ h1.title {
     text-align: center;
 }
 
-@media (max-width: 575px) {
+.jumbotro .lead  ul {
+    font-size: 1em;
+}
+
+@media (max-width: 48em) {
     .jumbotron h1 {
         font-size: 1.8em;
     }
@@ -199,8 +218,26 @@ h1.title {
     .jumbotron p.lead-top {
         font-size: 1.2em;
     }
+    .jumbotron p.lead {
+        font-size: smaller;
+    }
 }
 
+@media (max-width: 62em) {
+    .jumbotron h1 {
+        font-size: 2.5em;
+    }
+
+    .jumbotron p.lead-top {
+        font-size: 1.8em;
+    }
+    .jumbotron p.lead-bottom {
+        font-size: 1.6em;
+    }
+    .jumbotron p.lead {
+        font-size: 1.2em;
+    }
+}
 p.lead-top {
     font-size: 1.8em;
 }
