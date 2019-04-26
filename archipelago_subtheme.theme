@@ -73,6 +73,4 @@ function archipelago_subtheme_preprocess_page(&$variables) {
 
  /* @var Attribute $variables['navbar_top_attributes'] */
   $variables['navbar_top_attributes']->addClass($expand_class);
-  $variables['navbar_top_attributes']->removeClass('navbar');
-  $variables['navbar_attributes']->removeClass('navbar');
 }
