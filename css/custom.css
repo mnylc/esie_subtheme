@@ -36,6 +36,23 @@ pre code {
     -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
+/* FA and incons */
+/* this is a little bit tricky. */
+
+.nav-item .fa-li {
+    left: 0em !important;
+    top: 0.5em !important;;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+.nav-item .fa-li + a.nav-link {
+    padding-left: 30px;
+}
+
+
 /**menu and nav styles**/
 
 #navbar-main {
@@ -66,10 +83,12 @@ pre code {
     align-self: flex-start;
 }
 
+
 .navbar-collapse.collapse.show section.row {
     flex-flow: column;
     -webkit-flex-flow: column wrap; /* Safari 6.1+ */
 }
+
 
 #navbar-top .form-inline.navbar-form {
     margin-top:0.385rem;
@@ -77,8 +96,8 @@ pre code {
 
 @media all and (max-width: 62em) {
     .navbar-expand-lg .navbar-collapse {
-        -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+        -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
         -ms-flex-positive: 1;
         flex-grow: 1;
         -ms-flex-align: start;
@@ -95,11 +114,11 @@ pre code {
 
 
     }
-    #navbar-top.navbar-expand-lg .navbar-collapse .nav-link::before {
+   /* #navbar-top.navbar-expand-lg .navbar-collapse .nav-link::before {
         content: "> ";
         display:inline-block;
         color:#B3FFE3;
-    }
+    }*/
 
     .navbar-expand-lg .navbar-collapse .nav-link:hover {
         background: #001212;
@@ -122,8 +141,8 @@ pre code {
 
 @media all and (max-width: 48em) {
     .navbar-expand-lg .navbar-collapse {
-        -ms-flex-preferred-size: 40% !important;
-        flex-basis: 40%  !important;
+        -ms-flex-preferred-size: 20% !important;
+        flex-basis: 20%  !important;
         -ms-flex-positive: 1;
         flex-grow: 1;
         -ms-flex-align: start;
@@ -132,6 +151,22 @@ pre code {
 
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
         width: 220px !important;
+        flex: 1;
+    }
+}
+
+@media all and (max-width: 34em) {
+    .navbar-expand-lg .navbar-collapse {
+        -ms-flex-preferred-size: 10% !important;
+        flex-basis: 10%  !important;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
+        width: 200px !important;
         flex: 1;
     }
 }
@@ -450,9 +485,6 @@ p.lead-bottom {
     color: #00804d;
 }
 
-.fas {
-    color: rgba(40, 167, 115, 0.2);
-}
 
 /**END webform**/
 
