@@ -94,6 +94,19 @@ pre code {
     margin-top:0.385rem;
 }
 
+
+@media all and (max-width: 75em) {
+    .navbar-expand-lg .navbar-collapse {
+        -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+        -ms-flex-positive: 1;
+        flex-shrink: 1;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
+
+
 @media all and (max-width: 62em) {
     .navbar-expand-lg .navbar-collapse {
         -ms-flex-preferred-size: 30%;
@@ -131,6 +144,7 @@ pre code {
         font-size: 1.2rem;
         padding-left: 1.25rem;
         font-weight: 100;
+        padding-top: 0.7rem;
     }
 
     .collapsing {
@@ -152,6 +166,10 @@ pre code {
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
         width: 220px !important;
         flex: 1;
+        transition: none !important;
+    }
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+        transition: none !important;
     }
 }
 
@@ -166,9 +184,14 @@ pre code {
     }
 
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 200px !important;
+        width: 180px !important;
         flex: 1;
+        transition: none !important;
     }
+    #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
+        transition: none !important;
+    }
+
 }
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {

@@ -43,6 +43,7 @@ body {
 .navbar-toggler {
     border: 0;
     align-self: flex-start;
+    margin-top: 0.5rem;
 }
 
 
