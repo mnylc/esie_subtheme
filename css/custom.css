@@ -184,12 +184,16 @@ pre code {
     }
 
     #views-exposed-form-solr-search-content-page-1:focus-within fieldset.form-type-search-api-autocomplete input {
-        width: 180px !important;
+        width: 175px !important;
         flex: 1;
         transition: none !important;
     }
     #views-exposed-form-solr-search-content-page-1 fieldset.form-type-search-api-autocomplete input {
         transition: none !important;
+    }
+    .jumbotron {
+        margin-left:0!important;
+        margin-right:0!important;
     }
 
 }
