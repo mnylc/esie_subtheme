@@ -227,6 +227,7 @@ pre code {
 
 h1.title {
     font-size: 2rem;
+    margin-top: 1.25rem;
 }
 
 .field--name-display-field-copynode-formatted-metadata h2 {
