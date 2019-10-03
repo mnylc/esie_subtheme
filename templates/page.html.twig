@@ -135,11 +135,10 @@
                 </section>
               </main>
             {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>{%- if sidebar_first|render|striptags|trim is not empty -%}
+              <div{{ sidebar_first_attributes }}>
                 <aside class="section" role="complementary">
                   {{ page.sidebar_first }}
                 </aside>
-                  {%- endif -%}
               </div>
             {% endif %}
             {% if page.sidebar_second %}
