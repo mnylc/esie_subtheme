@@ -249,14 +249,18 @@ pre code {
 /** END search box **/
 
 h1.title {
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    color:white;
+    color:rgba(26, 26, 26, 255);
 }
 
 h1.title::before {
     content: '\\'
+}
+
+.highlighted {
+    margin-left:250px;
 }
 
 .field--name-display-field-copynode-formatted-metadata h2 {
@@ -268,7 +272,7 @@ h1.title::before {
 .promo {
     display: block;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding-bottom: 10px;
     background-repeat: no-repeat;
     background-position: center;
