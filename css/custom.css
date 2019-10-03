@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
 pre code {
     display: block;
     padding: 10px;
-    color: #00ff00;
+    color: #6a816a;
     background-color: #000;
     margin-left: 8px;
     width: 1010px;
@@ -488,11 +488,11 @@ p.lead-bottom {
 }
 
 .progress-step.is-active .progress-marker {
-    background-color: rgb(10, 140, 125);
+    background-color: rgb(235, 141, 0);
 }
 
 .webform-progress-tracker .progress-step.is-complete .progress-marker {
-    background-color: rgba(40, 167, 115, 0.3);
+    background-color: rgba(235, 141, 0, 0.3);
 }
 
 .webform-progress-tracker .progress-step.is-complete:hover .progress-marker {
@@ -500,15 +500,15 @@ p.lead-bottom {
 }
 
 .webform-progress-tracker .progress-step.is-active:hover .progress-marker {
-    background-color: rgb(10, 140, 125);
+    background-color: rgb(235, 141, 0);
 }
 
 .webform-actions .webform-button--next {
-    background-color: #b3ffe0;
+    background-color: #bfd5c1;
 }
 
 .webform-button--submit {
-    background-color: rgb(10, 140, 125);
+    background-color: rgb(189, 213, 173);
 }
 
 .webform-button--preview {
@@ -516,12 +516,12 @@ p.lead-bottom {
 }
 
 .webform-progress .progress-title[role="link"] {
-    color: #00804d;
+    color: #eb8d00;
 }
 
 .webform-progress .progress-title[role="link"]:hover, .webform-progress .progress-title[role="link"]:focus {
     text-decoration: underline;
-    color: #00804d;
+    color: #eb8d00;
 }
 
 
