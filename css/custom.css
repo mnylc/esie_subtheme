@@ -388,7 +388,7 @@ p.lead-bottom {
 }
 
 .block-views-blockld-display-for-digital-objects-sql-block-1 a {
-    color:rgba(191, 213, 193, 1)
+
 }
 
 .block-views-blockld-display-for-digital-objects-sql-block-1 a:hover {
@@ -557,4 +557,9 @@ details {
 }
 details .details-wrapper {
     background-color: white;
+}
+
+.field-iiif {
+    padding-left:0px;
+    padding-right:0px;
 }
