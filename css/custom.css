@@ -23,6 +23,8 @@ body.path-frontpage {
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
     font-family: 'Hind Siliguri', sans-serif;
 }
+
+
 pre code {
     display: block;
     padding: 10px;
@@ -249,7 +251,12 @@ pre code {
 h1.title {
     font-size: 1rem;
     margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
     color:white;
+}
+
+h1.title::before {
+    content: '\\'
 }
 
 .field--name-display-field-copynode-formatted-metadata h2 {
