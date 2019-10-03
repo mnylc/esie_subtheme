@@ -1,12 +1,14 @@
 html {
     position: relative;
     min-height: 100%;
-    background-color: #fff;
+    background-color:rgba(235,235,235,1);
 }
 
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color:rgba(235,235,235,1);
 }
 
 body.path-frontpage {
@@ -19,9 +21,8 @@ body.path-frontpage {
 }
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
-    font-family: 'Mukta', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
 }
-
 pre code {
     display: block;
     padding: 10px;
@@ -198,6 +199,25 @@ pre code {
 
 }
 @media (min-width: 992px) {
+    .navbar-expand-lg {
+        min-height: 30px;
+    }
+    #navbar-top.navbar.navbar-expand-lg {
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    #navbar-top > div.form-inline.navbar-form.float-right {
+        margin-top:0.385rem;
+        margin-right:90px;
+    }
+
+    #navbar-main.navbar-expand-lg {
+        margin-left:58px;
+        margin-top:6px;
+        /** Needed to avoid being overlapped by the logo */
+        padding-left: 220px;
+    }
     .navbar-expand-lg .navbar-nav {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -226,38 +246,27 @@ pre code {
 /** END search box **/
 
 h1.title {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 1.25rem;
+    color:white;
 }
 
 .field--name-display-field-copynode-formatted-metadata h2 {
     font-size: 1.3em;
 }
 
-/**home page promo stuff**/
+/**home page **/
 
 .promo {
     display: block;
     width: 100%;
-    height: 740px;
-    background-image: url(../img/islands_1.jpg);
+    height: 100vh;
+    padding-bottom: 10px;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start
-}
-
-
-.promo .image-credit {
-    font-size: xx-small;
-    color: #00995c;
-    opacity: 0.5;
-    flex-flow: row;
-    align-self: flex-end;
-    margin-top: auto;
-    justify-content: flex-start;
-    margin-left: auto;
 }
 
 .jumbotron {
@@ -311,37 +320,40 @@ p.lead-bottom {
     line-height: 1.6em;
     color: #33334d;
 }
-
+/* Buttons */
 .btn-primary,
 .button--primary {
-    background-color: rgb(10, 140, 125);
-    border-color: rgb(10, 140, 125);
+    background-color: rgba(191, 213, 193, 1);
+    border-color: transparent;
     color: #fff;
+    -webkit-box-shadow:  0 3px 6px rgba(0, 0, 0, 0.161);
+    -moz-box-shadow:  0 3px 6px rgba(0, 0, 0, 0.161);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.161);
 }
 
 .btn-primary:hover,
 .button--primary:hover {
-    color: #000;
-    background-color: #b3ffe0;;
-    border-color: #b3ffe0;;
+    color: #fff;
+    background-color: rgb(164, 213, 173);
+    -webkit-box-shadow:  0 3px 6px rgba(0, 0, 0, 0.161);
+    -moz-box-shadow:  0 3px 6px rgba(0, 0, 0, 0.161);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.161);
 }
 
-#strawberryfield h1,
-.front-section h1 {
-    font-weight: bold;
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #A4D5AD;
+    -webkit-box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:  0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+}
+.btn-primary:hover {
+    border-color: transparent;
 }
 
-#strawberryfield h1 {
-    text-shadow: 1px 1px #c10b7e;
-}
-
-#strawberryfield .jumbotron,
-.front-section .jumbotron {
-    background-color: rgba(255, 255, 255, 0);
-    margin-top: 0px;
-    text-align: left;
-}
-
+/* End Buttons */
 .front-section {
     display: block;
     padding: 12px;
@@ -375,27 +387,14 @@ p.lead-bottom {
 }
 
 .block-views-blockld-display-for-digital-objects-sql-block-1 a {
-    color: #00995c;
+    color:rgba(191, 213, 193, 1)
 }
 
 .block-views-blockld-display-for-digital-objects-sql-block-1 a:hover {
-    color: #00cc7a;
+    color:rgba(40, 167, 115, 0.3);
 }
 
-/**site footer**/
 
-.site-footer {
-    position: absolute;
-    width: 100%;
-    margin-top: 10px;
-    background-color: #000;
-}
-
-.site-footer .block {
-    border: none;
-}
-
-/**END site footer**/
 
 /**search results**/
 

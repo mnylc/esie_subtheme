@@ -115,7 +115,7 @@ $info = [
   ],
 
   // Preview files.
-  'preview_library' => 'archipelago_subtheme/color.preview',
+  'preview_library' => 'esie_subtheme/color.preview',
   'preview_html' => 'color/preview.html',
 
   // Attachments.

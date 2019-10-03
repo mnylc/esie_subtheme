@@ -36,6 +36,7 @@
  *
  * Regions:
  * - page.top_header: Items for the top header region.
+ * - page.top_header_menu: Menu Items in the header region
  * - page.top_header_form: Items for the top header form region.
  * - page.header: Items for the header region.
  * - page.header_form: Items for the header form region.
@@ -70,7 +71,7 @@
 #}
 
 {% block head %}
-    {% if page.secondary_menu or page.top_header or page.top_header_form %}
+    {% if page.secondary_menu or page.top_header or page.top_header_form or page.top_header_menu %}
         <nav{{ navbar_top_attributes }}>
             {% if container_navbar %}
             <div class="container">
@@ -80,6 +81,11 @@
                     {{ page.secondary_menu }}
                     {{ page.top_header }}
                 </div>
+                {% if page.top_header_menu %}
+                <div class="form-inline navbar-menu float-right">
+                        {{ page.top_header_menu }}
+                </div>
+                {% endif %}
                 {% if page.top_header_form %}
                     <div class="form-inline navbar-form float-right">
                         {{ page.top_header_form }}
@@ -95,7 +101,7 @@
         <div class="container">
             {% endif %}
             {{ page.header }}
-            {% if page.top_header or page.header_form %}
+            {% if page.top_header or page.header_form%}
                 <div class="navbar-collapse" id="CollapsingNavbar2">
                     {{ page.primary_menu }}
                     {% if page.header_form %}
@@ -127,120 +133,11 @@
             </main>
         </div>
         <div class="jumbotron">
-            <h1 class="display-4">Welcome to Archipelago Commons</h1>
-            <p class="lead lead-top">Open source digital collections software designed to empower communities of every size and shape.</p>
+            <h1 class="display-4"></h1>
+            <p class="lead lead-top"></p>
             <br />
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#howitworks" role="button">Learn more</a>
-            </p>
-        </div>
-        <p class="image-credit"><a href="http://dcmny.org/islandora/object/photosnycbeyond%3A32182" target="_blank">High-angle view of Lake Erie and other islands from Put-In-Bay, South Bass Island, Ohio, undated (ca. 1918-1922).</a></p>
-    </div>
-    <div id="howitworks" class="front-section">
-        <div class="jumbotron">
-            <h1 class="display-4">Architecture</h1>
-            <hr />
-            <div class="container">
-              <div class="row">
-                <div class="col-sm">
-                  <p class="lead lead-bottom">
-                  At the core of the Archipelago philosophy is our commitment to both simplicity and flexibility.
-                </p>
-                <p class="lead lead-bottom">
-                  Under the hood, Archipelago is:
-                </p>
-                <ul>
-                  <li>
-                  <a href="https://www.drupal.org/" target="blank">Drupal</a> (CMS)
-                </li>
-                <li>
-                  <a href="https://lucene.apache.org/solr/" target="blank">SOLR</a> (Search)
-                </li>
-                <li>
-                  <a href="https://cantaloupe-project.github.io/" target="blank">Cantaloupe</a> (Image Server)
-                </li>
-              </ul>
-              <p class="lead lead-bottom">
-                But the best part is that if you don't want to know all of that, you don't *need* to know it. Installation is entirely scripted with easy-to-follow <a href="/documentation">directions</a>. And we are here to <a href="/support">help</a>.
-              </p>
-              <br />
-              <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="#strawberryfield" role="button">Read on...</a>
-              </p>
-                </div>
-                <div class="col-sm">
-                  <img src="{{ directory }}/img/architecture.png"  class="img-fluid" />
-                </div>
-              </div>
-        </div>
-</div>
-    <div id="strawberryfield" class="front-section purple">
-        <div class="jumbotron">
-            <h1 class="display-4">Strawberry Field</h1>
-            <hr />
-            <p class="lead lead-bottom">
-              StrawberryField is Archipelago's innovative way of extending <a href="https://www.drupal.org/" target="blank">Drupal's</a> core webform module to add metadata capabilities to the CMS without sacrificing scalablity or performance.
-            </p>
-            <p class="lead lead-bottom">
-            Archipelago was built on our belief that any community should be empowered to describe their items and collections however they wish to. Systems must accommodate and celebrate our diversity, not constrain and dilute it.
-            With StrawberryField, your metadata is stored in a single database table as <a href="https://en.wikipedia.org/wiki/JSON" target="blank">JSON</a>, which can then be cast into countless other standards and formats depending on your preferences.
-            </p>
-            <div class="container">
-              <div class="row">
-                <div class="col-sm">
-                  <ul class="lead">
-                      <li>Integrated into D8's <a href="https://www.drupal.org/project/webform">Webform module</a></li>
-                      <li>Adds dynamic metadata capabilities without sacrificing scalability or performance</li>
-                      <li>Applicable to countless use cases</li>
-                  </ul>
-                </div>
-                <div class="col-sm">
-                  <p class="lead lead-bottom">
-                  <img src="{{ directory }}/img/strawberries.png"  class="img-fluid" />
-                </p>
-                </div>
-                <div class="col-sm text-center">
-                <p class="lead"><br /><br /><br />
-                    <a class="btn btn-primary btn-lg" href="#lod" role="button">Read on...</a>
-                </p>
-              </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div id="lod" class="front-section">
-        <div class="jumbotron">
-            <h1 class="display-4">Your data, the way you want it</h1>
-            <hr />
-            <div class="container">
-              <div class="row">
-                <div class="col-sm">
-                  <img src="{{ directory }}/img/jsonupcaststar.png"  class="img-fluid" />
-                </div>
-                <div class="col-sm">
-                  <p class="lead lead-bottom">
-                    With your data stored in a StrawberryField, Archipealgo then uses Drupal's twig templating system to cast your metadata into whatever standard or format you like.
-                  </p>
-                  <p class="lead lead-bottom">
-                    In addition, Archipelago comes with simple, intuitive tools for consuming and publishing linked data. There is no point in putting your collections online if people cannot find them! Search engines will know how to crawl into the deepest, darkest levels of your metadata.
-                  </p>
-                  <p class="lead text-center"><br /><br /><br />
-                      <a class="btn btn-primary btn-lg" href="#iiif" role="button">Read on...</a>
-                  </p>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div>
-    <div id="iiif" class="front-section purple">
-        <div class="jumbotron">
-            <h1 class="display-4">IIIF all the way</h1>
-            <hr />
-            <p class="lead lead-bottom">
-                When you deploy Archipelago, the <a href="https://medusa-project.github.io/cantaloupe/">Cantaloupe</a> image server comes with it, preconfigured and ready to go.
-            </p>
-            <p class="lead lead-bottom">
-                <a href="https://iiif.io"> International Image Interoperability Framework (IIIF)</a> delivers digital assets using a group of shared application programming interfaces. Archipelago uses IIIF's many APIs to generate media derivatives on the fly, providing access copies, shareable books and annotations -- no secondary uploads required, no wasted storage space.
+                <a class="btn btn-primary btn-lg" role="button">Learn more</a>
             </p>
         </div>
     </div>

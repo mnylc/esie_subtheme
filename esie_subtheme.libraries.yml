@@ -33,4 +33,4 @@ color.preview:
 fonts:
   css:
     theme:
-      '//fonts.googleapis.com/css?family=Mukta:400,500,600,700': { type: external, minified: true }
+      '//fonts.googleapis.com/css?family=Hind+Siliguri:400,500,700': { type: external, minified: true }

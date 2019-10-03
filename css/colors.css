@@ -1,4 +1,29 @@
 /* ---------- Color Module Styles ----------- */
+.colorpallete {
+    --color_assets_1: rgba(235, 91, 0, 255);
+    --color_assets_2: rgba(26, 26, 26, 255);
+    --color_assets_3: rgba(219, 219, 219, 255);
+    --color_assets_4: rgba(31, 111, 108, 137);
+    --color_assets_5: rgba(50, 152, 227, 155);
+    --color_assets_6: rgba(201, 103, 41, 116);
+    --color_assets_7: rgba(242, 242, 242, 255);
+    --color_assets_8: rgba(235, 235, 235, 255);
+    --color_assets_9: rgba(255, 255, 255, 242);
+    --color_assets_10: rgba(232, 232, 232, 255);
+    --color_assets_11: rgba(201, 152, 41, 173);
+    --color_assets_12: rgba(201, 127, 41, 173);
+    --color_assets_13: rgba(227, 173, 50, 173);
+    --color_assets_14: rgba(201, 152, 41, 80);
+    --color_assets_15: rgba(227, 173, 50, 96);
+    --color_assets_16: rgba(227, 173, 50, 38);
+    --color_assets_17: rgba(245, 245, 245, 255);
+    --color_assets_18: rgba(234, 232, 232, 255);
+    --color_assets_19: rgba(80, 90, 90, 255);
+    --color_assets_20: rgba(214, 223, 226, 255);
+    --color_assets_21: rgba(0, 0, 0, 255);
+    --color_assets_22: rgba(255, 255, 255, 204);
+    --color_assets_23: rgba(191, 213, 193, 255);
+}
 
 body {
     color: #3b3b3b;
@@ -9,7 +34,7 @@ body {
 #main-wrapper,
 .region-primary-menu .menu-item a.is-active,
 .region-primary-menu .menu-item--active-trail a {
-    background: #ffffff;
+    background-color:rgba(235,235,235,1);
 }
 
 .tabs ul.primary li a.is-active {
@@ -22,22 +47,22 @@ body {
 }
 
 #navbar-top {
-    background-color: black;
+    background-color: rgba(235,91,0,255);
 }
 
 #navbar-main {
-    background-color:rgb(43,58,81);
+    background-color:rgba(80,90,90,1)
 }
 
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #b3ffe0;
+    color: rgba(255,255,255,1);
 }
 
 
 #navbar-main .nav-link {
-    color: #b3ffe0;
+    color: rgba(255,255,255,1);
 }
 
 .navbar-toggler {
@@ -54,10 +79,10 @@ body {
 
 a,
 .link {
-    color:rgb(10,140,125);
+    color:rgba(235,91,0,255);
 }
 a{
-    color:rgb(10,140,125);
+    color:rgba(235,91,0,255);
 }
 
 
@@ -65,7 +90,7 @@ a:hover,
 a:focus,
 .link:hover,
 .link:focus {
-    color:rgb(10,140,125);
+    color: rgb(235, 141, 0);
     decoration:none;
 }
 
@@ -99,9 +124,6 @@ a:active,
     background-color: #0256b1;
 }
 
-.site-footer {
-    background: #f2f2f2;
-}
 
 .region-header,
 .region-header a,

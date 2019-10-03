@@ -1,17 +1,18 @@
-name: Archipelago Base Theme
+name: ESIE Archipelago Base Theme
 type: theme
-description: 'Achipelago Bootstrap Theme.'
+description: 'ESIE Archipelago Bootstrap Theme.'
 # version: VERSION
 # core: 8.x
 base theme: bootstrap_barrio
 
 libraries:
-  - archipelago_subtheme/bootstrap_cdn
-  - archipelago_subtheme/global-styling
-  - archipelago_subtheme/fonts
+  - esie_subtheme/bootstrap_cdn
+  - esie_subtheme/global-styling
+  - esie_subtheme/fonts
 
 regions:
   top_header: 'Top Header'
+  top_header_menu: 'Header Menu'
   top_header_form: 'Top Header Form'
   header: Header
   header_form: 'Header Form'
