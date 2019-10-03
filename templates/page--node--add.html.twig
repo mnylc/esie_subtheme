@@ -148,13 +148,6 @@
                   {{ page.content }}
                 </section>
               </main>
-            {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_first }}
-                </aside>
-              </div>
-            {% endif %}
             {% if page.sidebar_second %}
             {% spaceless %}
               <div{{ sidebar_second_attributes }}>{%- if page.sidebar_second|render|striptags|trim is not empty -%}
