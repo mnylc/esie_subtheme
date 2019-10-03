@@ -205,6 +205,7 @@ pre code {
     #navbar-top.navbar.navbar-expand-lg {
         padding-top:0px;
         padding-bottom:0px;
+        min-height: 60px;
     }
 
     #navbar-top > div.form-inline.navbar-form.float-right {
@@ -541,4 +542,19 @@ div#sidebar_second.sidebar.col-md-3.order-last:empty {
 /* make sure hidden is respected */
 .hidden {
     display: none !important;
+}
+
+/** Navigation breadcrumb **/
+.breadcrumb {
+    /** Move out of the logo **/
+    margin-left:250px;
+}
+details {
+    background-color: rgba(191, 213, 193, 1);
+    min-height:30px;
+    margin-bottom:5px;
+
+}
+details .details-wrapper {
+    background-color: white;
 }
