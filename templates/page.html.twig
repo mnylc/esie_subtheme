@@ -122,9 +122,7 @@
 
 {% block content %}
         <div id="main" class="{{ container }}">
-
           {{ page.breadcrumb }}
-
           <div class="row row-offcanvas row-offcanvas-left clearfix">
 
               <main{{ content_attributes }}>
@@ -134,7 +132,7 @@
                 </section>
               </main>
             {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>{%- if page.sidebar_first|render|striptags|trim is not empty -%}
+              <div{{ sidebar_first_attributes }}>{%- if page.sidebar_first|render is not empty -%}
                 <aside class="section" role="complementary">
                   {{ page.sidebar_first }}
                 </aside>
