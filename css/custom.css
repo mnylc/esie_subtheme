@@ -562,6 +562,8 @@ details {
     background-color: rgba(191, 213, 193, 1);
     min-height:30px;
     margin-bottom:5px;
+    border-radius: .25rem;
+    padding: 5px;
 
 }
 details .details-wrapper {
