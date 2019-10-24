@@ -557,10 +557,7 @@ div#sidebar_second.sidebar.col-md-3.order-last:empty {
 }
 
 /** Navigation breadcrumb **/
-.breadcrumb {
-    /** Move out of the logo **/
-    margin-left:250px;
-}
+
 details {
     background-color: rgba(191, 213, 193, 1);
     min-height:30px;
