@@ -134,20 +134,25 @@
                   {{ page.content }}
                 </section>
               </main>
-            {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>
+            {% if page.sidebar_first | render %}
+                {% spaceless %}
+              <div{{ sidebar_first_attributes }}>{%- if page.sidebar_first|render|striptags|trim is not empty -%}
                 <aside class="section" role="complementary">
                   {{ page.sidebar_first }}
                 </aside>
+                  {%- endif -%}
               </div>
+                {% endspaceless %}
             {% endif %}
-            {% if page.sidebar_second %}
+            {% if page.sidebar_second | render %}
+                {% spaceless %}
               <div{{ sidebar_second_attributes }}>{%- if page.sidebar_second|render|striptags|trim is not empty -%}
                 <aside class="section" role="complementary">
                   {{ page.sidebar_second }}
                 </aside>
                   {%- endif -%}
               </div>
+                {% endspaceless %}
             {% endif %}
           </div>
         </div>
