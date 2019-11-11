@@ -74,3 +74,22 @@ function esie_subtheme_preprocess_page(&$variables) {
  /* @var Attribute $variables['navbar_top_attributes'] */
   $variables['navbar_top_attributes']->addClass($expand_class);
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for node templates.
+ * @param array $suggestions
+ * @param array $variables
+ */
+function esie_subtheme_theme_suggestions_node_edit_form_alter(array &$suggestions, array $variables) {
+  $roles = \Drupal::currentUser()->getRoles();
+  // Use _ for - and __ for -- in filenames 
+  // Example: node_edit_form__contributor for node-edit-form--contributor.html.twig
+  if (in_array('contributor', $roles)) {
+    $suggestions[] = 'node_edit_form__contributor';
+    $suggestions[] = 'node_add_form__contributor';
+  }
+  if (in_array('curator', $roles)) {
+    $suggestions[] = 'node_edit_form__curator';
+    $suggestions[] = 'node_add_form__contributor';
+  }
+}

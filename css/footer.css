@@ -1,0 +1,22 @@
+.site-footer {
+    font-family: 'Hind Siliguri', sans-serif;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(7,21,8);
+    bottom:0;
+    height:250px;
+    background-image: url(../img/bottom_decor_cropped.png);
+    background-repeat: no-repeat;
+    background-position: 80% 110%;
+    padding: 5px 0 5px;
+}
+.site-footer .content {
+    display: flex;
+}
+
+.site-footer .block {
+    border: none;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+

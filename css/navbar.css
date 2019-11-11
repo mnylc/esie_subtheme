@@ -1,0 +1,81 @@
+/**
+ * @file
+ * ESIE subtheme navbar styles
+ */
+
+header > nav:first-child {
+    background-image: url(../img/top_decor_cropped.png);
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+}
+
+/* #navbar-main is defined as the wrapper id of the 2nd header in bootstrap_barrio.theme line 133*/
+/* the id is injected in markup in this subtheme's includes/header.html.twig because of the attributes from navbar_attributes */
+#navbar-main {
+    margin-left:58px;
+    margin-top:6px;
+    /*  !** Needed to avoid being overlapped by the logo *!*/
+    padding: 0 0 0 220px;
+}
+
+/* Logos SVG implemented in markup in this subtheme's block/block--system-branding-block.html.twig */
+.site-logo-group {
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    left: 100px;
+    width: 165px;
+}
+
+.site-logo-group > a {
+    padding-left: 1.25rem;
+}
+
+.site-logo-group > a > img {
+    position: absolute;
+    width: 75%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 0px;
+    z-index: 10;
+}
+
+/* logo-banner is the class given to the svg */
+svg.logo-banner {
+    position: absolute;
+    display: block;
+    width: 164px;
+    height: 200px;
+    left: 0;
+    top: 0;
+    transform: rotate(4deg);
+    transform-origin: left;
+    z-index: 9;
+}
+
+svg.logo-banner > rect {
+    fill: #fff;
+}
+
+.collapsing {
+    transition: height 0.1s linear;
+    /* transition: none !important; */
+}
+
+/*TODO: what is this for?*/
+
+/* FA and icons */
+/* this is a little bit tricky. */
+
+/*.nav-item .fa-li {*/
+/*    left: 0em !important;*/
+/*    top: 0.5em !important;;*/
+/*    position: absolute;*/
+/*    text-align: center;*/
+/*    width: 2em;*/
+/*    line-height: inherit;*/
+/*}*/
+
+/*.nav-item .fa-li + a.nav-link {*/
+/*    padding-left: 30px;*/
+/*}*/

@@ -1,40 +1,4 @@
-/**
- * @file
- * Subtheme specific CSS.
- */
-/* Top header menu */
-
-#navbar-top {
-background-image: url(../img/top_decor_cropped.png);
-    background-repeat: no-repeat;
-    background-position: 80% 0%;
-}
-
-section.region-top-header-form {
-    margin-left:0px;
-}
-
-#page .list-group-item {
-    background-color: transparent;
-    border: none;
-}
-
-#page .form-text {
-    margin-top:0px;
-}
-
-#page .form-control {
-}
-
-#page details summary {
-    color: #eb8d00;
-}
-
-#page div.entity-meta {
-    background-color: rgba(233, 236, 239, 0.31);
-    border-radius: .25rem;
-    padding: .75rem 1rem;
-}
+/*TODO @marlo find usages and refactor for use without IDS*/
 
 /* Node edit buttons */
 #edit-submit {
@@ -69,7 +33,7 @@ section.region-top-header-form {
     cursor: pointer;
     outline: none;
     -webkit-box-sizing: content-box;
-    padding: 3px 10px 3px 32px;
+    /*padding: 3px 10px 3px 32px;*/
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 4px;
@@ -88,14 +52,14 @@ section.region-top-header-form {
     -moz-border-radius: 4px;
     border-radius: 4px;
     padding: 3px 10px 3px 32px;
+    margin-left: 10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
     border-color: transparent;
 }
 
-#edit-submit-solr-search-content{
-
+#edit-submit-solr-search-content {
     background-image: url(../img/search.png);
     background-repeat: no-repeat;
     background-position: 0% 50%;
@@ -117,96 +81,3 @@ section.region-top-header-form {
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete.ui-autocomplete-loading:focus {
     background-image: url(../../../../core/misc/throbber-active.gif);
 }
-
-
-
-
-
-/* Navigation */
-
-/* Hide empty Sidebars */
-.sidebar:empty, [class^=col-]:empty { display: none; }
-
-
-.sidebar nav ul.nav {
-    -webkit-flex-direction: row;  /* Safari */
-    flex-direction:  column;
-}
-
-/* Content */
-.layout--onecol {
-    -webkit-flex-direction: row;  /* Safari */
-    flex-direction: column;
-    margin-bottom: 2em;
-}
-/* main content */
-#main-wrapper {
-    padding-bottom: 250px;
-}
-
-
-/* Facet display */
-.facet-item {
-    word-wrap: break-word;
-}
-
-/* Logos SVG */
-.site_logo_group {
-    position: absolute;
-    display: inline-block;
-    top: -20px;
-    left: 100px;
-    width: 165px;
-}
-
-#logo {
-    position: absolute;
-    width: 75%;
-    height: auto;
-    margin-top: 15px;
-    margin-left: 0px;
-    z-index: 10;
-}
-
-.logo_banner {
-    position: absolute;
-    display: block;
-    width: 164px;
-    height: 200px;
-    left: 0;
-    top: 0;
-    transform: rotate(4deg);
-    transform-origin: left;
-    z-index: 9;
-}
-
-.logo_banner_class {
-    fill: #fff;
-}
-
-
-/** site footer **/
-
-.site-footer {
-    font-family: 'Hind Siliguri', sans-serif;
-    position: absolute;
-    width: 100%;
-    background-color: rgb(7,21,8);
-    bottom:0;
-    height:250px;
-    background-image: url(../img/bottom_decor_cropped.png);
-    background-repeat: no-repeat;
-    background-position: 80% 110%;
-    padding: 5px 0 5px;
-}
-.site-footer .content {
-    display: flex;
-}
-
-.site-footer .block {
-    border: none;
-    margin-top:0px;
-    margin-bottom:0px;
-}
-
-/**END site footer**/

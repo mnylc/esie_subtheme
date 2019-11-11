@@ -1,0 +1,9 @@
+
+/* Hide empty Sidebars */
+.sidebar:empty, [class^=col-]:empty { display: none; }
+
+
+.sidebar nav ul.nav {
+    -webkit-flex-direction: row;  /* Safari */
+    flex-direction:  column;
+}
