@@ -75,9 +75,59 @@
     {% include directory ~ '/templates/includes/header.html.twig' %}
 {% endblock %}
 
-{#TODO: cusotmize front page and not use general content#}
+
+{%
+    set classes = [
+    'region',
+    'region-' ~ region|clean_class,
+]
+%}
+
 {% block content %}
-    {% include directory ~ '/templates/includes/page-content.html.twig' %}
+{#    {% include directory ~ '/templates/includes/page-content.html.twig' %}#}
+    <div id="main" class="{{ container }}">
+        {{ page.breadcrumb }}
+        <div class="row" id="front-feature">
+            <div class="col-md-4">
+                {# Doesn't work: #}
+                {# {{ bamboo_render_block('frontpagewelcomemessage') } }#}
+                {# Works with PLUGIN ID only, not block ID #}
+                <div class="card" id="frontpage-welcome">
+                    <div class="card-body">
+                        {{ bamboo_render_block('block_content:6bd4ad6b-8bdf-4dc4-8caf-0b5fb73c71df') }}
+                    </div>
+                </div>
+                <div class="card" id="frontpage-toolkit">
+                    <div class="card-body">
+                        {{ bamboo_render_block('block_content:ffdc2c33-1746-4e57-a0d5-d84d3071cdc4') }}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 featured-panorama">
+                <h1 class="title">Featured Panorama</h1>
+               {{ bamboo_render_block('views_block:featured_panorama-block_1') }}
+            </div>
+        </div>
+        <div class="row" id="explore">
+            <div class="col-sm-4">
+                {{ bamboo_render_block('block_content:9aad5f90-475e-4a92-91cb-6d88957a9ac5') }}
+            </div>
+            <div class="col-sm-4">
+                {{ bamboo_render_block('block_content:48f3ca56-4f55-44be-8d09-0833022b4249') }}
+            </div>
+            <div class="col-sm-4">
+                {{ bamboo_render_block('block_content:62e79764-0a57-4195-ba64-67181bc8c487') }}
+            </div>
+        </div>
+        <div class="row" id="info">
+            <div class="col-sm-6">
+                {{ bamboo_render_block('block_content:e038cdd5-af63-4b50-a51f-c08bef6914a3') }}
+            </div>
+            <div class="col-sm-6">
+                {{ bamboo_render_block('block_content:e038cdd5-af63-4b50-a51f-c08bef6914a3') }}
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block footer %}

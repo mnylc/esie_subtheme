@@ -4,12 +4,13 @@ global-styling:
     js/global.js: {}
   css:
     component:
-      css/custom.css: {}
-      css/custom-new.css: {}
       css/colors.css: {}
+      css/custom.css: {}
       css/footer.css: {}
       css/form.css: {}
       css/navbar.css: {}
+      css/page--front.css: {}
+      css/webform.css: {}
 bootstrap:
   js:
     /libraries/popper/popper.min.js: {}

@@ -68,54 +68,16 @@
  */
 #}
 
-{#TODO: @marlo refactor once we have Edit tab back #}
+{% extends "@bootstrap_barrio/layout/page.html.twig" %}
 
-<div id="page-wrapper">
-  <div id="page">
-    <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
-        {% include directory ~ '/includes/header.html.twig' %}
-    </header>
-    
-    
-    {% if page.highlighted %}
-      <div class="highlighted">
-        <aside class="{{ container }} section clearfix" role="complementary">
-          {{ page.highlighted }}
-        </aside>
-      </div>
-    {% endif %}
-    
-    {% if page.featured_top %}
-      {% block featured %}
-        <div class="featured-top">
-          <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
-            {{ page.featured_top }}
-          </aside>
-        </div>
-      {% endblock %}
-    {% endif %}
-    
-    <div id="main-wrapper" class="layout-main-wrapper clearfix">
-      {% include directory ~ '/includes/page-content.html.twig' %}
-    </div>
-    
-    
-    {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
-      <div class="featured-bottom">
-        <aside class="{{ container }} clearfix" role="complementary">
-          {{ page.featured_bottom_first }}
-          {{ page.featured_bottom_second }}
-          {{ page.featured_bottom_third }}
-        </aside>
-      </div>
-    {% endif %}
-      
-      
-      
-    <footer class="site-footer">
-      {% include directory ~ '/includes/footer.html.twig' %}
-    </footer>
-    
-    
-  </div>
-</div>
+{% block head %}
+  {% include directory ~ '/templates/includes/header.html.twig' %}
+{% endblock %}
+
+{% block content %}
+  {% include directory ~ '/templates/includes/page-content.html.twig' %}
+{% endblock %}
+
+{% block footer %}
+  {% include directory ~ '/templates/includes/footer.html.twig' %}
+{% endblock %}

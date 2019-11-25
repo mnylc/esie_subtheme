@@ -1,14 +1,140 @@
-/*TODO: @marlo in the course of building new home page, delete/refactor these styles and rename custom-new.css*/
+html {
+    position: relative;
+    min-height: 100%;
+    background-color:rgba(235,235,235,1);
+}
 
-/** Begin search box **/
-@media (max-width: 992px) {
-    #views-exposed-form-solr-search-content-page-1 > div > fieldset.js-form-item {
-        padding-left: 0;
-        padding-right: 0;
-        margin-right: 0;
-        margin-left: 0;
+body {
+    /* Margin bottom by footer height */
+    /*margin-bottom: 250px;*/
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color:rgba(235,235,235,1);
+}
+
+#main-wrapper {
+    padding-bottom: 250px;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+/*Adds the slashes...*/
+h1.title::before {
+    content: "\005C\005C";
+    color:rgba(80,90,90,1);
+}
+
+pre code {
+    display: block;
+    padding: 10px;
+    color: #6a816a;
+    background-color: #000;
+    margin-left: 8px;
+    width: 1010px;
+    overflow: scroll;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* future proofing */
+    -khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+
+main .feed-icons {
+    display: none;
+}
+
+/* Highlighted was the class given to page titles */
+.highlighted {
+    margin-left: 0;
+}
+
+@media (min-width: 993px) {
+    .highlighted {
+        margin-left:250px;
     }
 }
+
+/* Content */
+.layout--onecol {
+    -webkit-flex-direction: row;  /* Safari */
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+/* Facet display */
+.facet-item {
+    word-wrap: break-word;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: none;
+}
+
+.form-text {
+    margin-top:0;
+}
+
+details summary {
+    color: #eb8d00;
+}
+
+#page div.entity-meta {
+    background-color: rgba(233, 236, 239, 0.31);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+}
+
+.admin-content .views-form #edit-header {
+    padding: 0;
+}
+
+
+/*Explore Pages*/
+
+.explore-page .views-row {
+}
+
+.explore-page .views-row:not(:first-child) {
+    padding: 2rem 0 0 0;
+}
+
+.explore-page .views-row .badge {
+    padding: .5rem .75rem;
+    font-size: 1em;
+    margin-bottom: 1rem;
+    background-color: #f6f6f2;
+    white-space: normal;
+}
+
+@media (min-width: 993px) {
+    .explore-page .views-row .badge {
+        padding: .5rem .75rem;
+        font-size: 1em;
+        display: inline-block;
+    }
+}
+
+/* .explore-by-list-title is added as a class in the Views settings for Explore By X Pages */
+.explore-page .views-row  h2.explore-by-list-title {
+    position: relative;
+    color: rgba(235,91,0,255);
+    font-size: 1.6em;
+}
+@media (min-width: 993px) {
+    .explore-page .views-row .views-field-title-autocomplete {
+        display: inline-block;
+        padding-right: .5rem;
+    }
+}
+
+/* This is the thumbnail field */
+.explore-page .views-row > .views-field-field-descriptive-metadata {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-bottom: .75rem;
+}
+
+/** Begin search box **/
 
 .block-views-exposed-filter-blocksolr-search-content-page-1 {
     display: flex;
@@ -25,84 +151,10 @@ h1.title {
     color:rgba(26, 26, 26, 255);
 }
 
-h1.title::before {
-    content: "\005C\005C";
-    color:rgba(80,90,90,1);
-}
-
-.highlighted {
-    margin-left:250px;
-}
-
 .field--name-display-field-copynode-formatted-metadata h2 {
     font-size: 1.3em;
 }
 
-/**home page **/
-
-.promo {
-    display: block;
-    width: 100%;
-    /* height: 100vh; */
-    padding-bottom: 10px;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start
-}
-
-.jumbotron {
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: rgba(255, 255, 255, 0.7);
-    text-align: center;
-}
-
-.jumbotro .lead  ul {
-    font-size: 1em;
-}
-
-@media (max-width: 48em) {
-    .jumbotron h1 {
-        font-size: 1.8em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.2em;
-    }
-    .jumbotron p.lead {
-        font-size: smaller;
-    }
-}
-
-@media (max-width: 62em) {
-    .jumbotron h1 {
-        font-size: 2.5em;
-    }
-
-    .jumbotron p.lead-top {
-        font-size: 1.8em;
-    }
-    .jumbotron p.lead-bottom {
-        font-size: 1.6em;
-    }
-    .jumbotron p.lead {
-        font-size: 1.2em;
-    }
-}
-p.lead-top {
-    font-size: 1.8em;
-}
-
-p.lead-bottom {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1.6em;
-    color: #33334d;
-}
 /* Buttons */
 .btn-primary,
 .button--primary {
@@ -178,7 +230,6 @@ p.lead-bottom {
 }
 
 
-
 /**search results**/
 
 .view-solr-search-content h2 {
@@ -216,84 +267,6 @@ p.lead-bottom {
 .node-digital-object-collection-form .btn-primary {
     margin-left: 30px;
 }
-
-/**webform**/
-
-.block-help {
-    border-color: #fff;
-}
-
-.custom-form-input-heading,
-.field--name-moderation-state label,
-.node-type-list a {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-top: 8px;
-}
-
-.node-digital-object-collection-form .field--type-strawberryfield-field .fieldset-legend {
-    font-weight: bold;
-    font-size: .8em;
-}
-
-.node-type-list dt {
-    margin-top: 20px;
-}
-
-.webform-progress-tracker {
-    margin-left: 10px;
-}
-
-.field--name-field-descriptive-metadata .fieldset-wrapper {
-    margin-left: -30px;
-}
-
-.field--name-field-descriptive-metadata .fieldset-wrapper .form-actions {
-    margin-left: 16px;
-}
-
-.field--name-moderation-state {
-    /** margin-left:-30px; **/
-    /** width:300px; **/
-}
-
-.progress-step.is-active .progress-marker {
-    background-color: rgb(235, 141, 0);
-}
-
-.webform-progress-tracker .progress-step.is-complete .progress-marker {
-    background-color: rgba(235, 141, 0, 0.3);
-}
-
-.webform-progress-tracker .progress-step.is-complete:hover .progress-marker {
-    background-color: rgba(40, 167, 115, 0.6);
-}
-
-.webform-progress-tracker .progress-step.is-active:hover .progress-marker {
-    background-color: rgb(235, 141, 0);
-}
-
-.webform-actions .webform-button--next {
-    background-color: #bfd5c1;
-}
-
-.webform-button--submit {
-    background-color: rgb(189, 213, 173);
-}
-
-.webform-button--preview {
-    background-color: rgba(40, 167, 115, 0.3);
-}
-
-.webform-progress .progress-title[role="link"] {
-    color: #eb8d00;
-}
-
-.webform-progress .progress-title[role="link"]:hover, .webform-progress .progress-title[role="link"]:focus {
-    text-decoration: underline;
-    color: #eb8d00;
-}
-
 
 /**END webform**/
 
@@ -341,6 +314,7 @@ details .details-wrapper {
 }
 
 .field-iiif {
-    padding-left:0px;
-    padding-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+

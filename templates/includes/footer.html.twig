@@ -1,15 +1,31 @@
 <div class="{{ container }}">
-    {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-        <div class="site-footer__top clearfix">
-            {{ page.footer_first }}
-            {{ page.footer_second }}
-            {{ page.footer_third }}
-            {{ page.footer_fourth }}
-        </div>
-    {% endif %}
+    <div class="row">
+         {% if page.footer_first %}
+             <div class="d-none d-sm-block">
+                 <div class="col ">
+                    {{ page.footer_first }}
+                 </div>
+             </div>
+         {% endif %}
+        {% if page.footer_second %}
+                <div class="col-auto pr-5">
+                        {{ page.footer_second }}
+                </div>
+        {% endif %}
+        {% if page.footer_third %}
+                <div class="col">
+                        {{ page.footer_third }}
+                </div>
+        {% endif %}
+        {% if page.footer_fourth %}
+                <div class="col">
+                        {{ page.footer_fourth }}
+                </div>
+        {% endif %}
+    </div>
     {% if page.footer_fifth %}
         <div class="site-footer__bottom">
-            {{ page.footer_fifth }}
+                {{ page.footer_fifth }}
         </div>
     {% endif %}
 </div>

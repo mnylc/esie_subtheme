@@ -1,7 +1,6 @@
 <div id="main" class="{{ container }}">
     {{ page.breadcrumb }}
     <div class="row row-offcanvas row-offcanvas-left clearfix">
-{#       TODO: why doesn't this add/remove work. also content_attributes is described as being for the header. why.#}
         <main{{ content_attributes }}{{content_attributes.addClass('col-lg-9').removeClass('col')}}>
             <section class="section">
                 <a id="main-content" tabindex="-1"></a>

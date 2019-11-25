@@ -34,7 +34,6 @@ function esie_subtheme_form_system_theme_settings_alter(&$form, FormStateInterfa
 function esie_subtheme_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   if (isset($form['search_api_fulltext'])) {
     $form['search_api_fulltext']['#attributes']['placeholder'] = t('Search');
-
   }
   if (isset($form['sort_by'])) {
     $form['sort_by']['#attributes']['class'][] = Html::cleanCssIdentifier('d-none');
@@ -48,7 +47,7 @@ function esie_subtheme_form_views_exposed_form_alter(&$form, \Drupal\Core\Form\F
 
 
 /**
- * Implements hook_preprocess_HOOK() for menu.html.twig.
+ * Implements hook_preprocess_HOOK() for page.html.twig.
  */
 function esie_subtheme_preprocess_page(&$variables) {
 
@@ -84,12 +83,8 @@ function esie_subtheme_theme_suggestions_node_edit_form_alter(array &$suggestion
   $roles = \Drupal::currentUser()->getRoles();
   // Use _ for - and __ for -- in filenames 
   // Example: node_edit_form__contributor for node-edit-form--contributor.html.twig
-  if (in_array('contributor', $roles)) {
-    $suggestions[] = 'node_edit_form__contributor';
-    $suggestions[] = 'node_add_form__contributor';
-  }
-  if (in_array('curator', $roles)) {
-    $suggestions[] = 'node_edit_form__curator';
-    $suggestions[] = 'node_add_form__contributor';
+  foreach ($roles as $role) {
+    $suggestions[] = "node_edit_form__{$role}";
+    $suggestions[] = "node_add_form__{$role}";
   }
 }

@@ -31,7 +31,7 @@
  * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
  */
 #}
-{#TODO: why is it inserting <nav></nav> around the content. can't find in Drupal UI. we are already in side a <nav></nav> so that's not a typical bootstrap markup#}
+
 {%
   set classes = [
     'block',
@@ -42,7 +42,7 @@
 %}
 {{ title_prefix }}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-   Label. If not displayed, we still provide it for screen readers. 
+{#   Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('sr-only') %}
   {% endif %}
@@ -54,4 +54,3 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-\

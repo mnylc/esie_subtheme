@@ -1,0 +1,72 @@
+
+/**webform**/
+
+.block-help {
+    border-color: #fff;
+}
+
+.custom-form-input-heading,
+.field--name-moderation-state label,
+.node-type-list a {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 8px;
+}
+
+.node-digital-object-collection-form .field--type-strawberryfield-field .fieldset-legend {
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.node-type-list dt {
+    margin-top: 20px;
+}
+
+.webform-progress-tracker {
+    margin-left: 10px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper {
+    margin-left: -30px;
+}
+
+.field--name-field-descriptive-metadata .fieldset-wrapper .form-actions {
+    margin-left: 16px;
+}
+
+.progress-step.is-active .progress-marker {
+    background-color: rgb(235, 141, 0);
+}
+
+.webform-progress-tracker .progress-step.is-complete .progress-marker {
+    background-color: rgba(235, 141, 0, 0.3);
+}
+
+.webform-progress-tracker .progress-step.is-complete:hover .progress-marker {
+    background-color: rgba(40, 167, 115, 0.6);
+}
+
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker {
+    background-color: rgb(235, 141, 0);
+}
+
+.webform-actions .webform-button--next {
+    background-color: #bfd5c1;
+}
+
+.webform-button--submit {
+    background-color: rgb(189, 213, 173);
+}
+
+.webform-button--preview {
+    background-color: rgba(40, 167, 115, 0.3);
+}
+
+.webform-progress .progress-title[role="link"] {
+    color: #eb8d00;
+}
+
+.webform-progress .progress-title[role="link"]:hover, .webform-progress .progress-title[role="link"]:focus {
+    text-decoration: underline;
+    color: #eb8d00;
+}

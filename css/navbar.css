@@ -18,6 +18,10 @@ header > nav:first-child {
     padding: 0 0 0 220px;
 }
 
+#navbar-top.navbar-dark .nav-link {
+    color: #fff
+}
+
 /* Logos SVG implemented in markup in this subtheme's block/block--system-branding-block.html.twig */
 .site-logo-group {
     position: absolute;

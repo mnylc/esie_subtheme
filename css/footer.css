@@ -8,7 +8,7 @@
     background-image: url(../img/bottom_decor_cropped.png);
     background-repeat: no-repeat;
     background-position: 80% 110%;
-    padding: 5px 0 5px;
+    padding: 15px 0;
 }
 .site-footer .content {
     display: flex;
@@ -16,7 +16,13 @@
 
 .site-footer .block {
     border: none;
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+
+.site-footer a {
+    color: white;
+    text-decoration: underline;
 }
 
