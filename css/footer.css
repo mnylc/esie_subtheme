@@ -26,3 +26,13 @@
     text-decoration: underline;
 }
 
+.site-footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    max-height: 150px;
+    padding-inline-start: 60px;
+}
+
+.site-footer .footer-links .nav-item {
+    padding-inline-end: 120px;
+}
