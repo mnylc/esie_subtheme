@@ -45,6 +45,12 @@
     border-top-color: #ccc;
 }
 
+#frontpage-welcome > div {
+    /* It's ok...tO offset the triangle...*/
+    padding-top: 35px;
+    padding-right: 35px;
+}
+
 /* Toolkit triangle */
 #frontpage-toolkit > div > div::before,
 #frontpage-toolkit > div::after {
@@ -184,7 +190,7 @@
 .view-featured-panorama .views-field-title {
     z-index: 1;
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 40px;
     padding: 15px 30px 15px 15px;
     background:rgba(255,255,255, 0.5);

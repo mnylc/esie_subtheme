@@ -75,7 +75,6 @@
     {% include directory ~ '/templates/includes/header.html.twig' %}
 {% endblock %}
 
-
 {%
     set classes = [
     'region',
@@ -84,14 +83,13 @@
 %}
 
 {% block content %}
-{#    {% include directory ~ '/templates/includes/page-content.html.twig' %}#}
     <div id="main" class="{{ container }}">
         {{ page.breadcrumb }}
         <div class="row" id="front-feature">
             <div class="col-md-4">
-                {# Doesn't work: #}
-                {# {{ bamboo_render_block('frontpagewelcomemessage') } }#}
-                {# Works with PLUGIN ID only, not block ID #}
+{#                 Doesn't work: #}
+{#                 {{ bamboo_render_block('frontpagewelcomemessage') } }#}
+{#                 Works with PLUGIN ID only, not block ID #}
                 <div class="card" id="frontpage-welcome">
                     <div class="card-body">
                         {{ bamboo_render_block('block_content:6bd4ad6b-8bdf-4dc4-8caf-0b5fb73c71df') }}
