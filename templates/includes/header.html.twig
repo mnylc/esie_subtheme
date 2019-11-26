@@ -11,11 +11,12 @@
         <div class="d-lg-none">
             <h1>ESIE</h1>    
         </div>
-        <div class="collapse navbar-collapse" id="CollapsingNavbar">
+        <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
             {# page.secondary_menu =  currently empty #}
             {{ page.secondary_menu }}
             {% if page.top_header_menu %}
-                <div class="ml-auto">
+{#                <div class="ml-auto">#}
+                <div class="flex-grow-1">
                     {{ page.top_header_menu }}
                 </div>
             {% endif %}
@@ -25,16 +26,14 @@
                     {{ page.top_header_form }}
                 </div>
             {% endif %}
-                
-        <div class="navbar-main-collapsed d-lg-none">
-                {{ page.primary_menu }}
-                {% if page.header_form %}
-                <div class="form-inline navbar-form">
-                    {{ page.header_form }}
+                <div class="navbar-main-collapsed d-lg-none">
+                        {{ page.primary_menu }}
+                        {% if page.header_form %}
+                        <div class="form-inline navbar-form">
+                            {{ page.header_form }}
+                        </div>
+                        {% endif %}
                 </div>
-                {% endif %}
-        </div>
-                
         </div>
     {% if container_navbar %}
         </div>

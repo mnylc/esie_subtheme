@@ -162,6 +162,7 @@
 /* Featured Panorama */
 .featured-panorama h1 {
     padding-left: 30px;
+    margin-top: 0;
 }
 
 @media (max-width: 993px) {

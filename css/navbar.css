@@ -22,6 +22,10 @@ header > nav:first-child {
     color: #fff
 }
 
+#navbar-top .form-inline {
+    overflow: hidden;
+}
+
 /* Logos SVG implemented in markup in this subtheme's block/block--system-branding-block.html.twig */
 .site-logo-group {
     position: absolute;
