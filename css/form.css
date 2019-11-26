@@ -1,5 +1,3 @@
-/*TODO @marlo find usages and refactor for use without IDS*/
-
 /* Node edit buttons */
 #edit-submit {
     background-color: rgba(191, 213, 193, 1)
@@ -7,6 +5,27 @@
 #edit-preview {
     background-color: rgba(40, 167, 115, 0.3);
 }
+
+/*Custom node-edit forms, see templates/custom-edit/ */
+
+.custom-edit-form .field--name-title {
+    padding-left: 0;
+}
+
+.custom-edit-form fieldset legend {
+    margin-left: -15px;
+}
+
+.custom-edit-form .form-type-webform-terms-of-service {
+    padding-left: 30px;
+}
+
+.custom-edit-form .form-type-webform-terms-of-service label::after {
+    /*increases visibility of gray on gray*/
+    border: 1px solid #000;
+}
+
+
 /* Exposed Solr Search Form */
 
 #views-exposed-form-solr-search-content-page-1 label {

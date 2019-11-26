@@ -83,8 +83,7 @@ function esie_subtheme_theme_suggestions_node_edit_form_alter(array &$suggestion
   $roles = \Drupal::currentUser()->getRoles();
   // Use _ for - and __ for -- in filenames 
   // Example: node_edit_form__contributor for node-edit-form--contributor.html.twig
-  foreach ($roles as $role) {
-    $suggestions[] = "node_edit_form__{$role}";
-    $suggestions[] = "node_add_form__{$role}";
+  if (in_array('contributor', $roles)) {
+    $suggestions[] = 'node_edit_form__contributor';
   }
 }
