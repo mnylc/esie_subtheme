@@ -1,0 +1,208 @@
+@media (min-width: 992px) { 
+    .path-frontpage #main {
+        /* Why hardcode 100px? To match the logo placement in navbar.css ... */
+        padding: 0 100px;
+        margin-top: 60px;
+    } 
+}
+#front-feature .card {
+    border: none;
+}
+
+#front-feature .card h2, #front-feature .card h3 {
+    font-weight: bold;
+}
+
+#front-feature .card a {
+    text-align: right;
+}
+
+#frontpage-welcome > div {
+    background-color: rgba(242, 242, 242, 255);
+}
+
+/* Welcome triangle */
+#frontpage-welcome > div::before,
+#frontpage-welcome > div::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#frontpage-welcome > div::before {
+    border-width: 1.5em;
+    border-right-color: #ccc;
+    border-top-color: #ccc;
+}
+
+#frontpage-welcome > div::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: #ccc;
+    border-top-color: #ccc;
+}
+
+#frontpage-welcome > div {
+    /* It's ok...tO offset the triangle...*/
+    padding-top: 35px;
+    padding-right: 35px;
+}
+
+/* Toolkit triangle */
+#frontpage-toolkit > div > div::before,
+#frontpage-toolkit > div::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#frontpage-toolkit > div::before {
+    border-width: 1.5em;
+    border-left-color: #ccc;
+    border-top-color: #ccc;
+}
+
+#frontpage-toolkit > div::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-left-color: #ccc;
+    border-top-color: #ccc;
+}
+#frontpage-toolkit > div {
+    background-color: rgba(191, 213, 193, 1);
+    /* It's ok...tO offset the triangle...*/
+    padding-top: 35px;
+    padding-left: 35px;
+}
+
+#frontpage-toolkit .card-body .field p:last-child {
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* Explore cards */
+
+/* Corner triangle */
+#explore > div::before,
+#explore > div::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    border-color: transparent;
+    border-style: solid;
+}
+
+#explore > div::before {
+    border-width: 1.5em;
+    border-right-color: #ccc;
+    border-top-color: #ccc;
+}
+
+#explore > div::after {
+    border-radius: 0.4em;
+    border-width: 1.35em;
+    border-right-color: #ccc;
+    border-top-color: #ccc;
+}
+
+#explore {
+    margin-top: 2rem;
+    /* Why hardcode 42px? To match opposite of 58px for #navbar-main in navbar.css ... */
+    margin-left: -42px;
+    overflow: hidden;
+    background-color: rgba(191, 213, 193, 1);
+}
+
+@media (min-width: 1201px) {
+    #explore {
+        padding: 60px 120px;
+    }
+}
+@media (min-width: 993px) {
+    #explore {
+        padding: 60px 60px;
+        /* Why hardcode 100px? To match navbar.css ... */
+        margin-right: -100px;
+    }
+}
+@media (min-width: 577px) {
+    #explore {
+        margin-left:0;
+    }
+}
+
+#explore > div {
+    background-color: rgba(242, 242, 242, 255);
+    overflow: hidden;
+    background-clip: content-box;
+    border-radius: 25px;
+}
+
+#explore > div p {
+    padding-top: 30px;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+#explore > div p, #explore > div h2 {
+    color: #999;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+#explore > div img {
+    margin-bottom: -50px;
+    margin-right: 10px;
+    max-width: 150px;
+    height: auto;
+    float: right;
+}
+
+/* Featured Panorama */
+.featured-panorama h1 {
+    padding-left: 30px;
+    margin-top: 0;
+}
+
+@media (max-width: 993px) {
+    .featured-panorama h1 {
+        margin: 1rem 0;
+        padding-left: 0;
+    }
+}
+
+.featured-panorama #featured-panorama-icon {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    background: url('../img/street-view-solid.png');
+}
+
+.view-featured-panorama .views-field-title {
+    z-index: 1;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    padding: 15px 30px 15px 15px;
+    background:rgba(255,255,255, 0.5);
+    font-size: 1.2rem;
+}
+
+.view-featured-panorama .views-field-title a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Info paragraphs */
+#front-feature #info {
+    margin-top: 2rem
+}

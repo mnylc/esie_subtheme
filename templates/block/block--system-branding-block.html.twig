@@ -13,16 +13,16 @@
  */
 #}
 {% set attributes = attributes.addClass('site-branding') %}
-  <div class="site_logo_group">
+  <div class="site-logo-group">
   {% if site_logo or site_name %}
-    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand">
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
       {% if site_logo %}
-        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top" id="logo"/>
+        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top"/>
       {% endif %}
       {{ site_name }}
     </a>
-    <svg class="logo_banner">
-      <rect class="logo_banner_class" rx="0" ry="0" x="0" y="0" width="153" height="163">
+    <svg class="logo-banner">
+      <rect rx="0" ry="0" x="0" y="0" width="153" height="163">
       </rect>
     </svg>
   {% endif %}
