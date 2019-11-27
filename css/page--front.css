@@ -81,14 +81,14 @@
     padding-left: 35px;
 }
 
-#frontpage-toolkit .card-body .field p:last-child {
+#frontpage-toolkit .card-body p:last-child {
     text-align: right;
     text-decoration: underline;
 }
 
 /* Explore cards */
 
-/* Corner triangle */
+/* Corner triangle for explore cards */
 #explore > div::before,
 #explore > div::after {
     content: '';
@@ -114,27 +114,24 @@
 
 #explore {
     margin-top: 2rem;
-    /* Why hardcode 42px? To match opposite of 58px for #navbar-main in navbar.css ... */
-    margin-left: -42px;
     overflow: hidden;
     background-color: rgba(191, 213, 193, 1);
+    padding: 30px 15px;
+
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 992px) {
     #explore {
-        padding: 60px 120px;
+        /* Why hardcode 42px? To match opposite of 58px for #navbar-main in navbar.css ... */
+        margin-left: -42px;
     }
 }
+
 @media (min-width: 993px) {
     #explore {
-        padding: 60px 60px;
+        padding: 60px 60px 30px 60px;
         /* Why hardcode 100px? To match navbar.css ... */
         margin-right: -100px;
-    }
-}
-@media (min-width: 577px) {
-    #explore {
-        margin-left:0;
     }
 }
 
@@ -143,6 +140,12 @@
     overflow: hidden;
     background-clip: content-box;
     border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    #explore > div {
+        margin: 10px 5px;
+    }
 }
 
 #explore > div p {
@@ -165,18 +168,19 @@
     float: right;
 }
 
-/* Featured Panorama */
-.featured-panorama h1 {
-    padding-left: 30px;
-    margin-top: 0;
-}
+/*.featured-panorama h1 {*/
+/*    padding-left: 30px;*/
+/*    margin-top: 0;*/
+/*}*/
 
-@media (max-width: 993px) {
-    .featured-panorama h1 {
-        margin: 1rem 0;
-        padding-left: 0;
-    }
-}
+/*@media (max-width: 992px) {*/
+/*    .featured-panorama h1 {*/
+/*        margin: 1rem 0;*/
+/*        padding-left: 0;*/
+/*    }*/
+/*}!* Featured Panorama *!*/
+
+
 
 .featured-panorama #featured-panorama-icon {
     z-index: 1;
@@ -187,6 +191,23 @@
     background: url('../img/street-view-solid.png');
 }
 
+/*This is the title that says "\\ Featuerd Panorama" */
+.featured-panorama .views-element-container > h2  {
+    margin-top: 2rem;
+}
+
+@media (min-width: 576px) {
+    .featured-panorama .views-element-container > h2  {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+}
+
+.featured-panorama .views-element-container > h2:before {
+    content: "\005C\005C";
+}
+
+/*This is the title overlay on top of viewer*/
 .view-featured-panorama .views-field-title {
     z-index: 1;
     position: absolute;
@@ -202,7 +223,17 @@
     text-decoration: none;
 }
 
-/* Info paragraphs */
-#front-feature #info {
-    margin-top: 2rem
+.featured-panorama .views-element-container .view-content {
+    margin: 0 !important;
+}
+@media (min-width: 576px) {
+    .featured-panorama .views-element-container .view-content {
+       max-width: 100%;
+    }  
+}
+
+/* Info paragraphs aka 'featured_last_row' region */
+
+.region-featured-last {
+    margin: 3rem 0 1rem 0;
 }
