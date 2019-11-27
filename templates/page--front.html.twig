@@ -1,4 +1,3 @@
-
 {#
 /**
  * @file
@@ -43,6 +42,11 @@
  * - page.primary_menu: Items for the primary menu region.
  * - page.secondary_menu: Items for the secondary menu region.
  * - page.featured_top: Items for the featured top region.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.featured_second_top_left: Items for the Second featured top left region.
+ * - page.featured_second_top_right: Items for the Second featured top right region.
+ * - page.featured_middle: Items for the Featured Middle Row region.
+ * - page.featured_last: Items for Featured Last Row region.
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
@@ -54,7 +58,6 @@
  * - page.footer_third: Items for the third footer column.
  * - page.footer_fourth: Items for the fourth footer column.
  * - page.footer_fifth: Items for the fifth footer column.
- * - page.breadcrumb: Items for the breadcrumb region.
  *
  * Theme variables:
  * - navbar_top_attributes: Items for the header region.
@@ -86,44 +89,18 @@
     <div id="main" class="{{ container }}">
         {{ page.breadcrumb }}
         <div class="row" id="front-feature">
-            <div class="col-md-4">
-{#                 Doesn't work: #}
-{#                 {{ bamboo_render_block('frontpagewelcomemessage') } }#}
-{#                 Works with PLUGIN ID only, not block ID #}
-                <div class="card" id="frontpage-welcome">
-                    <div class="card-body">
-                        {{ bamboo_render_block('block_content:6bd4ad6b-8bdf-4dc4-8caf-0b5fb73c71df') }}
-                    </div>
-                </div>
-                <div class="card" id="frontpage-toolkit">
-                    <div class="card-body">
-                        {{ bamboo_render_block('block_content:ffdc2c33-1746-4e57-a0d5-d84d3071cdc4') }}
-                    </div>
-                </div>
+             <div class="col-md-4">
+                {{ page.featured_second_top_left }}
             </div>
             <div class="col-md-8 featured-panorama">
-                <h1 class="title">Featured Panorama</h1>
-               {{ bamboo_render_block('views_block:featured_panorama-block_1') }}
+                {{ page.featured_second_top_right }}
             </div>
         </div>
         <div class="row" id="explore">
-            <div class="col-sm-4">
-                {{ bamboo_render_block('block_content:9aad5f90-475e-4a92-91cb-6d88957a9ac5') }}
-            </div>
-            <div class="col-sm-4">
-                {{ bamboo_render_block('block_content:48f3ca56-4f55-44be-8d09-0833022b4249') }}
-            </div>
-            <div class="col-sm-4">
-                {{ bamboo_render_block('block_content:62e79764-0a57-4195-ba64-67181bc8c487') }}
-            </div>
+             {{ page.featured_middle }}
         </div>
         <div class="row" id="info">
-            <div class="col-sm-6">
-                {{ bamboo_render_block('block_content:e038cdd5-af63-4b50-a51f-c08bef6914a3') }}
-            </div>
-            <div class="col-sm-6">
-                {{ bamboo_render_block('block_content:e038cdd5-af63-4b50-a51f-c08bef6914a3') }}
-            </div>
+             {{ page.featured_last }}
         </div>
     </div>
 {% endblock %}
