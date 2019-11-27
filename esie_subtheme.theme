@@ -87,3 +87,49 @@ function esie_subtheme_theme_suggestions_node_edit_form_alter(array &$suggestion
     $suggestions[] = 'node_edit_form__contributor';
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for region templates.
+ * @param array $suggestions
+ * @param array $variables
+ */
+function esie_subtheme_theme_suggestions_region_alter(array &$suggestions, array $variables) {
+  $nowrap = [
+    //  featured_second_top_right holds the the stacked Welcome and Toolkit blocks on the front page
+    'featured_second_top_left',
+    //  featured_second_top_right holds the Featured Panorama block on the front page
+    'featured_second_top_right',
+    //  featured_middle holds the explore cards
+    'featured_middle'
+  ];
+  if ( theme_get_setting('bootstrap_barrio_region_clean_' . $variables['elements']['#region']) !== NULL) {
+    $region_clean = theme_get_setting('bootstrap_barrio_region_clean_' . $variables['elements']['#region']);
+  }
+  else {
+    $region_clean = in_array($variables['elements']['#region'], $nowrap);
+  }
+  if ( $region_clean ) {
+    $suggestions[] = 'region__nowrap';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ *  @param array $variables
+ */
+function esie_subtheme_preprocess_block(&$variables) {
+  $block_id = $variables['elements']['#id'];
+  $block = \Drupal\block\Entity\Block::load($block_id);
+//  $variables['region'] = $block->getRegion();
+//  error_log(var_export($block->getRegion(), true));
+  $region = $block->getRegion();
+  // Adds col-md-4 class to the featured_middle region, i.e. the region holding the "Explore By" Cards.
+  if ($region == 'featured_middle') {
+    error_log(var_export($block->getRegion(), true));
+    $variables['attributes']['class'][] = 'col-md-4';
+  }
+  if ($region == 'featured_last') {
+    error_log(var_export($block->getRegion(), true));
+    $variables['attributes']['class'][] = 'col-md-6';
+  }
+}
