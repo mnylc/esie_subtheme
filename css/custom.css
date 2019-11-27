@@ -307,8 +307,12 @@ details {
     margin-bottom:5px;
     border-radius: .25rem;
     padding: 5px;
-
 }
+
+details:focus, details summary:focus {
+    outline: none;
+}
+
 details .details-wrapper {
     background-color: white;
 }
