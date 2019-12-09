@@ -9,6 +9,11 @@ header > nav:first-child {
     background-position: 80% 0%;
 }
 
+#CollapsingNavbar > div:first-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* #navbar-main is defined as the wrapper id of the 2nd header in bootstrap_barrio.theme line 133*/
 /* the id is injected in markup in this subtheme's includes/header.html.twig because of the attributes from navbar_attributes */
 #navbar-main {
