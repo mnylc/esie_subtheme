@@ -50,15 +50,13 @@
     background-color: rgb(235, 141, 0);
 }
 
-.webform-actions .webform-button--next {
-    background-color: #bfd5c1;
+.webform-actions .webform-button--next, .webform-actions webform-button--submit {
+    background-color: rgba(31, 111, 108, 137);
+    color: white;
 }
 
-.webform-button--submit {
-    background-color: rgb(189, 213, 173);
-}
-
-.webform-button--preview {
+.webform-actions .webform-button--previous, .webform-actions .webform-button--reset {
+    /*border: 1px rgba(31, 111, 108, 137) solid;*/
     background-color: rgba(40, 167, 115, 0.3);
 }
 

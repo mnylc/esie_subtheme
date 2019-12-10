@@ -1,10 +1,16 @@
+/*Border around main webform*/
+#edit-field-descriptive-metadata-wrapper {
+    border-bottom: 1px #656565 solid;
+}
 /* Node edit buttons */
 #edit-submit {
-    background-color: rgba(191, 213, 193, 1)
+    background-color: rgba(31, 111, 108, 137);
+    color: white;
 }
 #edit-preview {
     background-color: rgba(40, 167, 115, 0.3);
 }
+
 
 /*Custom node-edit forms, see templates/custom-edit/ */
 
