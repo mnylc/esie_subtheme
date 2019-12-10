@@ -30,31 +30,31 @@
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-      <ul{{ attributes.addClass('nav navbar-nav') }}>
+      <ul{{ attributes.addClass('nav navbar-nav justify-content-end') }}>
     {% else %}
       <ul class="dropdown-menu">
     {% endif %}
     {% for item in items %}
       {%
         set classes = [
-          menu_level ? 'dropdown-item' : 'nav-item',
-          item.is_expanded ? 'menu-item--expanded',
-          item.is_collapsed ? 'menu-item--collapsed',
-          item.in_active_trail ? 'active',
-          item.below ? 'dropdown',
-        ]
+        menu_level ? 'dropdown-item' : 'nav-item',
+        item.is_expanded ? 'menu-item--expanded',
+        item.is_collapsed ? 'menu-item--collapsed',
+        item.in_active_trail ? 'active',
+        item.below ? 'dropdown',
+      ]
       %}
       <li{{ item.attributes.addClass(classes) }}>
         {%
           set link_classes = [
-            not menu_level ? 'nav-link',
-            item.in_active_trail ? 'active',
-            item.below ? 'dropdown-toggle',
-            item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(' '),
-          ]
+          not menu_level ? 'nav-link',
+          item.in_active_trail ? 'active',
+          item.below ? 'dropdown-toggle',
+          item.url.getOption('attributes').class ? item.url.getOption('attributes').class | join(' '),
+        ]
         %}
         {% if item.title == "Tools" %}
-          <i class="fas fa-toolbox fa-lg">
+          <span class="fa-li" ><i class="fas fa-toolbox fa-lg"></i></span>
         {% endif %}
         {% if item.below %}
           {{ link(item.title, item.url, {'class': link_classes, 'data-toggle': 'dropdown', 'aria-expanded': 'false', 'aria-haspopup': 'true' }) }}
@@ -62,9 +62,6 @@
         {% else %}
           {{ link(item.title, item.url, {'class': link_classes}) }}
         {% endif %}
-              {% if item.title == "Tools" %}
-          </i>
-              {% endif %}
       </li>
     {% endfor %}
     </ul>

@@ -203,10 +203,6 @@
     }
 }
 
-.featured-panorama .views-element-container > h2:before {
-    content: "\005C\005C";
-}
-
 /*This is the title overlay on top of viewer*/
 .view-featured-panorama .views-field-title {
     z-index: 1;
