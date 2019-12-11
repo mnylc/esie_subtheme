@@ -1,15 +1,31 @@
-/* Node edit buttons */
-#edit-submit {
-    background-color: rgba(191, 213, 193, 1)
+/* Border under main webform */
+#edit-field-descriptive-metadata-wrapper {
+    border-bottom: 1px #656565 solid;
+}
+/* Buttons */
+#edit-submit, #edit-submit--2, .form-submit {
+    background-color: rgba(31, 111, 108, 137);
+    color: white;
 }
 #edit-preview {
     background-color: rgba(40, 167, 115, 0.3);
 }
 
+#main .nav a:hover, #main .nav a:focus, #main .nav .link:hover, #main .nav .link:focus {
+    color: rgb(235, 141, 0);
+    text-decoration: underline;
+}
+
 /*Custom node-edit forms, see templates/custom-edit/ */
 
+/* "Object title" above descriptive metadata in Webform */
 .custom-edit-form .field--name-title {
-    padding-left: 0;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.063);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* future proofing */
+    -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
 .custom-edit-form fieldset legend {
@@ -24,7 +40,6 @@
     /*increases visibility of gray on gray*/
     border: 1px solid #000;
 }
-
 
 /* Exposed Solr Search Form */
 
@@ -110,3 +125,18 @@
 .js fieldset.form-type-search-api-autocomplete input.form-autocomplete.ui-autocomplete-loading:focus {
     background-image: url(../../../../core/misc/throbber-active.gif);
 }
+
+/* This is the "Current state: Draft" etc. section below webforms */
+.entity-content-form-footer div, #edit-moderation-state-wrapper {
+    padding: 0 0 1px 0;
+    background-color: rgb(220, 220, 220);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* future proofing */
+    -khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+
+.views-form div {
+    padding: 0;
+}
+

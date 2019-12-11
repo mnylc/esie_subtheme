@@ -9,9 +9,50 @@ header > nav:first-child {
     background-position: 80% 0%;
 }
 
-#CollapsingNavbar > div:first-child {
-    display: flex;
-    justify-content: flex-end;
+
+@media (min-width: 993px) {
+    #CollapsingNavbar > div:first-child {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Display all links within dropdowns as expanded on mobile */
+@media (max-width: 992px) {
+    .dropdown-toggle {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: block;
+        position: relative;
+        border-width: 0;
+        padding: 0;
+        margin: 0;
+        background-color: unset;
+        color: white;
+    }
+
+    .dropdown-item {
+        padding: .5rem 0rem;
+        color: rgba(0,0,0,.5);
+    }
+
+    .dropdown-item a {
+        color: white;
+    }
+    
+    .dropdown-item a:hover, .dropdown-item a:focus {
+        color: rgba(255, 255, 255, 0.75);
+        text-decoration: none;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        background-color: unset;
+        color: white;
+    }
+
+    
 }
 
 /* #navbar-main is defined as the wrapper id of the 2nd header in bootstrap_barrio.theme line 133*/

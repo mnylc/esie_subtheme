@@ -13,6 +13,15 @@ body {
 
 #main-wrapper {
     padding-bottom: 250px;
+    margin-left: 0;
+}
+
+@media (min-width: 993px) {
+    /* When not on front page, align w gray bar */
+    #main {
+        /* Why hardcode 58px? To match the edge if gray bar in navbar.css ... */
+        padding: 0 58px;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a {
@@ -46,6 +55,36 @@ main .feed-icons {
     .highlighted {
         margin-left:250px;
     }
+}
+
+.views-header {
+    padding: 0 0 15px 15px;
+    color: rgba(80, 90, 90, 255);
+}
+
+/* These are the background colors behind the filters above content listings */
+#main .views-element-container .views-exposed-form {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.063);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* future proofing */
+    -khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+
+#main .views-element-container #edit-header {
+    margin-top: 15px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.063);
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /* future proofing */
+    -khtml-border-radius: 8px; /* for old Konqueror browsers */
+}
+
+/* This is the "Apply to selected items" button in the filter area above content listings */
+#edit-submit--2 {
+    margin-left: 15px;
 }
 
 /* Content */
@@ -85,9 +124,6 @@ details summary {
 
 
 /*Explore Pages*/
-
-.explore-page .views-row {
-}
 
 .explore-page .views-row:not(:first-child) {
     padding: 2rem 0 0 0;
