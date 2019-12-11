@@ -50,9 +50,13 @@
     background-color: rgb(235, 141, 0);
 }
 
-.webform-actions .webform-button--next, .webform-actions webform-button--submit {
+.webform-actions .webform-button--next, .webform-actions webform-button--submit, button[name="geographic_location_reconciliate_button"] {
     background-color: rgba(31, 111, 108, 137);
     color: white;
+}
+
+button[name="images_remove_button"] {
+    background-color: rgba(227, 173, 50, 173);
 }
 
 .webform-actions .webform-button--previous, .webform-actions .webform-button--reset {
