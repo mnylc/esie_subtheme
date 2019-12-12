@@ -82,11 +82,6 @@ main .feed-icons {
     -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
-/* This is the "Apply to selected items" button in the filter area above content listings */
-#edit-submit--2 {
-    margin-left: 15px;
-}
-
 /* Content */
 .layout--onecol {
     -webkit-flex-direction: row;  /* Safari */
@@ -357,3 +352,44 @@ details .details-wrapper {
     padding-right: 0px;
 }
 
+/*Tables*/ 
+
+tr {
+    border-bottom: none;
+}
+
+tr th {
+    border: 1px solid #808080;
+}
+
+tr th:first-child {
+    border-left: none;
+}
+
+tr th:last-child {
+    border-right: none;
+}
+
+tr td {
+    border: none;
+}
+
+table {
+    border-radius: 10px;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}

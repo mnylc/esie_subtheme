@@ -3,6 +3,12 @@
     border-bottom: 1px #656565 solid;
 }
 /* Buttons */
+
+/* This is the "Apply to selected items" button in the filter area above content listings */
+#edit-submit--2 {
+    margin-left: 15px;
+}
+
 #edit-submit, #edit-submit--2, .form-submit {
     background-color: rgba(31, 111, 108, 137);
     color: white;
