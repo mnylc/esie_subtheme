@@ -73,11 +73,11 @@ button[name="images_remove_button"] {
     color: #eb8d00;
 }
 
-fieldset#edit-location-of-panorama--wrapper .fieldset-wrapper {
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper {
     margin-left: 0;
 }
 
-fieldset#edit-location-of-panorama--wrapper .fieldset-wrapper > div > fieldset, 
-fieldset#edit-location-of-panorama--wrapper .fieldset-wrapper > div > div {
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > fieldset, 
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > div {
     padding: 0;
 }
