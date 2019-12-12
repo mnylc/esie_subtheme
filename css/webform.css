@@ -73,11 +73,12 @@ button[name="images_remove_button"] {
     color: #eb8d00;
 }
 
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper {
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper, fieldset.webform-metadata-nominatim--wrapper legend {
     margin-left: 0;
 }
 
 fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > fieldset, 
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > div {
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > div,
+fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > span > div {
     padding: 0;
 }
