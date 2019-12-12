@@ -108,6 +108,11 @@ main .feed-icons {
     margin-top:0;
 }
 
+/* Collapseable revision info etc tabs */
+.layout-region-node-secondary details[open] {
+  background-color: #fff;  
+}
+
 details summary {
     color: #eb8d00;
 }
