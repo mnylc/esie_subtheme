@@ -104,7 +104,7 @@ main .feed-icons {
 }
 
 /* Collapseable revision info etc tabs */
-.layout-region-node-secondary details[open] {
+details[open] {
   background-color: #fff;  
 }
 
