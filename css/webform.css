@@ -26,11 +26,34 @@
     margin-left: 10px;
 }
 
-.field--name-field-descriptive-metadata .fieldset-wrapper {
-    margin-left: -30px;
+
+[data-drupal-selector="edit-content"] .form-group {
+   padding-left:0 !important;
+   padding-right:0 !important;
 }
 
-.field--name-field-descriptive-metadata .fieldset-wrapper .form-actions {
+[data-drupal-selector="edit-content"] > .form-group {
+   padding-left:15px !important;
+   padding-right:15px !important;
+
+}
+[data-drupal-selector="edit-footer"] {
+   padding-left:0 !important;
+   padding-right:0 !important;
+}
+
+[data-drupal-selector="edit-footer"] .form-group {
+   padding-left:0 !important;
+   padding-right:0 !important;
+}
+
+[data-drupal-selector="edit-footer"] > .form-group {
+   padding-left:15px !important;
+   padding-right:15px !important;
+}
+
+
+.webform-ajax-form-wrapper .fieldset-wrapper .form-actions {
     margin-left: 16px;
 }
 
@@ -55,7 +78,7 @@
     color: white;
 }
 
-button[name="images_remove_button"] {
+.webform-ajax-form-wrapper button[name="images_remove_button"] {
     background-color: rgba(227, 173, 50, 173);
 }
 
@@ -71,14 +94,4 @@ button[name="images_remove_button"] {
 .webform-progress .progress-title[role="link"]:hover, .webform-progress .progress-title[role="link"]:focus {
     text-decoration: underline;
     color: #eb8d00;
-}
-
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper, fieldset.webform-metadata-nominatim--wrapper legend {
-    margin-left: 0;
-}
-
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > fieldset, 
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > div,
-fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > span > div {
-    padding: 0;
 }

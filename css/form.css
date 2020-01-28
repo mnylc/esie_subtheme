@@ -34,14 +34,6 @@
     -khtml-border-radius: 8px; /* for old Konqueror browsers */
 }
 
-.custom-edit-form fieldset legend {
-    margin-left: -15px;
-}
-
-.custom-edit-form .form-type-webform-terms-of-service {
-    padding-left: 30px;
-}
-
 .custom-edit-form .form-type-webform-terms-of-service label::after {
     /*increases visibility of gray on gray*/
     border: 1px solid #000;
@@ -145,4 +137,3 @@
 .views-form div {
     padding: 0;
 }
-
