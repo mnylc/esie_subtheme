@@ -77,3 +77,21 @@ fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > div > div,
 fieldset.webform-metadata-nominatim--wrapper .fieldset-wrapper > span > div {
     padding: 0;
 }
+
+/* Because of the order of loading Bootstrap and Jquery UI, there is a known issue with the titlebar-close button styles */
+/* Rather than reorder JS loading introducing possible bugs, manually load the jquery-ui "X" icon (icon sheet downloaded from Jquery UI) */
+/* This overrides the Jquery UI styles loaded by webform module */
+.ui-dialog-titlebar-close {
+    padding:0 !important;
+}
+
+.ui-dialog-titlebar-close:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/ui-icons_888888_256x240.png);
+    /* position of the "X" in the icon sheet */
+    background-position: -95px -128px;
+    background-repeat: no-repeat;
+}
