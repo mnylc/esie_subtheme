@@ -59,11 +59,6 @@ button[name="images_remove_button"] {
     background-color: rgba(227, 173, 50, 173);
 }
 
-.webform-actions .webform-button--previous, .webform-actions .webform-button--reset {
-    /*border: 1px rgba(31, 111, 108, 137) solid;*/
-    background-color: rgba(40, 167, 115, 0.3);
-}
-
 .webform-progress .progress-title[role="link"] {
     color: #eb8d00;
 }

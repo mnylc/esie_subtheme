@@ -13,9 +13,6 @@
     background-color: rgba(31, 111, 108, 137);
     color: white;
 }
-#edit-preview {
-    background-color: rgba(40, 167, 115, 0.3);
-}
 
 #main .nav a:hover, #main .nav a:focus, #main .nav .link:hover, #main .nav .link:focus {
     color: rgb(235, 141, 0);
