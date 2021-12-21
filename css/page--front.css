@@ -82,8 +82,7 @@
 }
 
 #frontpage-toolkit .card-body p:last-child {
-    text-align: right;
-    text-decoration: underline;
+    text-align: left;
 }
 
 /* Explore cards */
