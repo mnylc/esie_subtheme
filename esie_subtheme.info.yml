@@ -2,8 +2,9 @@ name: ESIE Archipelago Base Theme
 type: theme
 description: 'ESIE Archipelago Bootstrap Theme.'
 # version: VERSION
-# core: 8.x
+# core: 10.x
 base theme: bootstrap_barrio
+core_version_requirement: ^8 || ^9 || ^10
 
 libraries:
   - esie_subtheme/bootstrap_cdn
