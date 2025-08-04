@@ -134,3 +134,7 @@
 .views-form div {
     padding: 0;
 }
+
+.form-item-search-api-fulltext.form-group {
+    margin-bottom:auto;
+}
