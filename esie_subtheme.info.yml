@@ -42,7 +42,7 @@ regions:
   footer_fifth: 'Footer fifth'
 
 # Information added by Drupal.org packaging script on 2018-08-09
-version: '8.x-4.17'
-core: '8.x'
+version: '10.x-5.5.2'
+core: '10.x'
 project: 'Archipelago'
 datestamp: 1533828192
